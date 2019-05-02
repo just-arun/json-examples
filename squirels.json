@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "fancy t-shirt",
+    "vender": "vendor name",
+    "size": ["s", "m", "l", "xl"],
+    "color": ["red", "yellow", "white", "black"],
+    "quantity": 60,
+    "gender": "male",
+    "available": true,
+    "price": "300"
+  },
+  {
+    "id": 2,
+    "name": "cool t-shirt",
+    "vender": "vendor name",
+    "size": ["s", "m", "l", "xl"],
+    "color": ["red", "yellow", "white", "blue"],
+    "quantity": 50,
+    "gender": "female",
+    "available": true,
+    "price": "500"
+  },
+  {
+    "id": 3,
+    "name": "light t-shirt",
+    "vender": "vendor name",
+    "size": ["s", "m", "l", "xl"],
+    "color": ["red", "yellow", "pink", "blue"],
+    "quantity": 30,
+    "gender": "female",
+    "available": true,
+    "price": "200"
+  }
+]
