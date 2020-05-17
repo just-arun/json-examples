@@ -361,6 +361,7 @@ body {
 
         .left {
           animation: animateWidthFull 1s 1 forwards ease-in-out;
+          display: block;
           @include sm() {
             .left-content {
               left: 10%;
