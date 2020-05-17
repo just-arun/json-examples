@@ -38,7 +38,7 @@ const app = new Vue({
             console.log(location.hash);
             switch (location.hash) {
                 case "":
-                    this.sectionOne = 'hello'
+                    this.sectionOne = 'hi'
                     break;
                 case "#about":
                     this.sectionOne = 'about'

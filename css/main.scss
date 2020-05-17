@@ -433,13 +433,10 @@ body {
           opacity: 0;
         }
       }
-      &.hello {
+      &.hi {
         .left {
           width: 50%;
           animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
-          .left-content {
-            animation: leftPartTo 1s .8s 1 forwards ease-in-out;
-          }
           .hello {
             opacity: 1;
           }
@@ -455,6 +452,9 @@ body {
           @include sm() {
             .left-content {
               left: 10%;
+              &.about {
+                animation: leftPartTo 1s .8s 1 forwards ease-in-out;
+              }
             }
           }
           .hello {
@@ -617,6 +617,7 @@ body {
                 position: absolute;
                 top: 14px;
                 left: 16px;
+                cursor: pointer;
                 font-size: 1rem;
               }
             }
