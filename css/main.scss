@@ -581,6 +581,7 @@ body {
             }
             .input-field {
               position: relative;
+              margin-bottom: 15px;
               input {
                 outline: none;
                 width: 100%;
@@ -607,9 +608,9 @@ body {
                     background: #fff;
                   }
                 }
-                &:invalid {
-                  border-color: rgba(255, 42, 42, 0.253);
-                }
+                // &:invalid {
+                //   border-color: rgba(255, 42, 42, 0.253);
+                // }
               }
               label {
                 position: absolute;

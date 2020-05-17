@@ -166,6 +166,29 @@
                     />
                     <label for="name">Name</label>
                   </div>
+                  <div class="input-field">
+                    <input
+                      required
+                      type="text"
+                      name="email"
+                      id="email"
+                      v-model="contact.email"
+                      autocomplete="off"
+                    />
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field">
+                    <input
+                      required
+                      type="text"
+                      name="company"
+                      id="company"
+                      v-model="contact.company"
+                      autocomplete="off"
+                    />
+                    <label for="company">Company</label>
+                  </div>
+                  <button type="submit">submit</button>
                 </form>
               </div>
             </div>
