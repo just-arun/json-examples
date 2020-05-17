@@ -476,6 +476,8 @@ body {
 .wrapper section.landing .section-1 .tech-section {
   position: relative;
   overflow: hidden;
+  width: 0%;
+  opacity: 1;
 }
 
 .wrapper section.landing .section-1.hi .left .hello {
@@ -544,8 +546,6 @@ body {
 
 .wrapper section.landing .section-1.tech .tech-section {
   background: #fff;
-  -webkit-animation: zeroToHundred .3 1s 1 forwards ease-in-out;
-          animation: zeroToHundred .3 1s 1 forwards ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,10 +556,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   left: 0%;
+  opacity: 1;
+  width: 100%;
 }
 
 .wrapper section.landing .section-1.tech .tech-section .tech-content {
   max-width: 700px;
+  padding: 20px;
 }
 
 @-webkit-keyframes animateWidthFull {
