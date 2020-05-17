@@ -426,6 +426,28 @@ body {
           width: 0%;
         }
       }
+      &.tech {
+        overflow: hidden;
+
+        .left {
+          animation: animateWidthFull 1s 1 forwards ease-in-out;
+          @include sm() {
+            .left-content {
+              left: 10%;
+            }
+          }
+          .hello {
+            @include sm() {
+              top: 20%;
+            }
+          }
+        }
+
+        .right {
+          overflow: hidden;
+          width: 0%;
+        }
+      }
     }
   }
 }

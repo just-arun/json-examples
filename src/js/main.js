@@ -37,6 +37,15 @@ const app = new Vue({
                 case "#about":
                     this.sectionOne = 'about'
                     break;
+                case "#tech":
+                    this.sectionOne = 'tech'
+                    break;
+                case "#projects":
+                    this.sectionOne = 'projects'
+                    break;
+                case "#contact":
+                    this.sectionOne = 'contact'
+                    break;
             }
         },
         navLink(par) {
