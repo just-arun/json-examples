@@ -460,6 +460,10 @@ body {
         .right {
           animation: fiftyToZero 1s 1 forwards ease-in-out;
         }
+        .tech-section {
+          background: #000;
+          animation: zeroToHundred .3 1s 1 forwards ease-in-out;
+        }
       }
     }
   }
@@ -527,5 +531,22 @@ body {
   } to {
     opacity: 0;
     width: 0%;
+  }
+}
+@keyframes zeroToHundred {
+  from {
+    opacity: 0;
+    width: 0%;
+  } to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
   }
 }
