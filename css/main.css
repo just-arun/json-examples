@@ -791,9 +791,10 @@ body {
   margin-bottom: 15px;
 }
 
-.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input {
+.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input, .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field textarea {
   outline: none;
   width: 100%;
+  max-width: 400px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
@@ -803,7 +804,7 @@ body {
   border-radius: 5px;
 }
 
-.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:focus + label, .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:valid + label {
+.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:focus + label, .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:valid + label, .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field textarea:focus + label, .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field textarea:valid + label {
   top: -8px;
   left: 8px;
   background: #eee;
@@ -812,12 +813,12 @@ body {
   color: grey;
 }
 
-.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:focus {
+.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:focus, .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field textarea:focus {
   border: 1px solid black;
   background: #fff;
 }
 
-.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:focus + label {
+.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:focus + label, .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field textarea:focus + label {
   background: #fff;
 }
 
@@ -826,6 +827,15 @@ body {
   top: 14px;
   left: 16px;
   font-size: 1rem;
+}
+
+.wrapper section.landing .section-1.contact .contact-section .contact-content button {
+  padding: 10px 20px;
+  border: 0px;
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  width: 200px;
 }
 
 @-webkit-keyframes animateWidthFull {

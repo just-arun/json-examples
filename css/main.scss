@@ -582,9 +582,10 @@ body {
             .input-field {
               position: relative;
               margin-bottom: 15px;
-              input {
+              input, textarea {
                 outline: none;
                 width: 100%;
+                max-width: 400px;
                 box-sizing: border-box;
                 padding: 10px;
                 font-size: 1.2rem;
@@ -618,6 +619,14 @@ body {
                 left: 16px;
                 font-size: 1rem;
               }
+            }
+            button {
+              padding: 10px 20px;
+              border: 0px;
+              background: #fff;
+              border: 1px solid #000;
+              color: #000;
+              width: 200px;
             }
           }
         }
