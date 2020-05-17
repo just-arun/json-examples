@@ -336,8 +336,8 @@ body {
 .wrapper section.landing .section-1 .left {
   background: #ff5851;
   width: 50%;
-  -webkit-animation: animateWidthHalf 1s 1 forwards ease-in-out;
-          animation: animateWidthHalf 1s 1 forwards ease-in-out;
+  -webkit-animation: animateWidthHalf 1s 1 forwards cubic-bezier(0.74, -1.01, 1, 1.01);
+          animation: animateWidthHalf 1s 1 forwards cubic-bezier(0.74, -1.01, 1, 1.01);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

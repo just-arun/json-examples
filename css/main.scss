@@ -297,7 +297,7 @@ body {
       .left {
         background: $primaryColor;
         width: 50%;
-        animation: animateWidthHalf 1s 1 forwards ease-in-out;
+        animation: animateWidthHalf 1s 1 forwards cubic-bezier(0.74,-1.01, 1, 1.01);
         display: flex;
         align-items: center;
         position: relative;
