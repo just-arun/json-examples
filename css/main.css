@@ -340,7 +340,7 @@ body {
 
 @media screen and (max-width: 650px) {
   .wrapper section.landing .section-1 {
-    overflow-x: hidden;
+    top: 40px;
   }
 }
 
