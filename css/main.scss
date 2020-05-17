@@ -421,7 +421,6 @@ body {
       }
       &.about {
         overflow: hidden;
-
         .left {
           animation: animateWidthFull 1s 1 forwards ease-in-out;
           @include sm() {
@@ -440,6 +439,26 @@ body {
         .right {
           overflow: hidden;
           width: 0%;
+        }
+      }
+      &.tech {
+        overflow: hidden;
+        .left {
+          animation: hundredToZero 1s 1 forwards ease-in-out;
+          @include sm() {
+            .left-content {
+              opacity: 0%;
+            }
+          }
+          .hello {
+            display: none;
+            @include sm() {
+              top: 20%;
+            }
+          }
+        }
+        .right {
+          animation: fiftyToZero 1s 1 forwards ease-in-out;
         }
       }
     }

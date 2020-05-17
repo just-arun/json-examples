@@ -513,6 +513,36 @@ body {
   width: 0%;
 }
 
+.wrapper section.landing .section-1.tech {
+  overflow: hidden;
+}
+
+.wrapper section.landing .section-1.tech .left {
+  -webkit-animation: hundredToZero 1s 1 forwards ease-in-out;
+          animation: hundredToZero 1s 1 forwards ease-in-out;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper section.landing .section-1.tech .left .left-content {
+    opacity: 0%;
+  }
+}
+
+.wrapper section.landing .section-1.tech .left .hello {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper section.landing .section-1.tech .left .hello {
+    top: 20%;
+  }
+}
+
+.wrapper section.landing .section-1.tech .right {
+  -webkit-animation: fiftyToZero 1s 1 forwards ease-in-out;
+          animation: fiftyToZero 1s 1 forwards ease-in-out;
+}
+
 @-webkit-keyframes animateWidthFull {
   from {
     width: 50%;
