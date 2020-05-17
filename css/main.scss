@@ -421,6 +421,9 @@ body {
         overflow: hidden;
         background: #fff;
         height: 100vh;
+        .projects-grid {
+          opacity: 0;
+        }
       }
       &.hello {
         .left {
@@ -498,10 +501,10 @@ body {
           @include lg() {
             top: 40px;
             left:40px;
-            animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
             min-width: calc(100vw - 80px);
             max-width: calc(100vw - 80px);
           }
+          animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
           @include sm {
             width: 100vw;
           }
@@ -516,6 +519,7 @@ body {
               @include sm {
                 padding: 20px 20px;
               }
+              animation: fadeInTop 1s 1s 1 forwards ease-in-out;
             }
             width: 100%;
             position: relative;
