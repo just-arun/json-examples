@@ -647,6 +647,8 @@ body {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   width: 0%;
+  -webkit-animation: leftPartTo 1s 1 forwards ease-;
+          animation: leftPartTo 1s 1 forwards ease-;
 }
 
 .wrapper section.landing .section-1.projects .projects-section {
