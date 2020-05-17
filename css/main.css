@@ -239,6 +239,7 @@ body {
 @media screen and (max-width: 650px) {
   .wrapper aside.menu-aside {
     display: none;
+    top: 0px;
   }
 }
 
