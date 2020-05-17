@@ -297,7 +297,7 @@ body {
         top: 40px;
       }
       @include sm() {
-        top: 40px;
+        top: 0px;
       }
       .left {
         background: $primaryColor;
