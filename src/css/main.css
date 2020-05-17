@@ -369,7 +369,7 @@ body {
 }
 
 .wrapper section.landing {
-  height: calc(100vh + 400px);
+  height: calc(100vh + 800px);
   position: relative;
 }
 
