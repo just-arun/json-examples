@@ -427,10 +427,10 @@ body {
         }
       }
       &.tech {
-        overflow: hidden;
+          overflow: hidden;
+          width: 0%;
 
         .left {
-          animation: animateWidthFull 1s 1 forwards ease-in-out;
           @include sm() {
             .left-content {
               left: 10%;
@@ -445,7 +445,7 @@ body {
 
         .right {
           overflow: hidden;
-          width: 0%;
+          animation: animateWidthFull 1s 1 forwards ease-in-out;
         }
       }
     }
