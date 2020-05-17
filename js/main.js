@@ -49,7 +49,12 @@ const app = new Vue({
             }
         },
         navLink(par) {
-            location.hash = `#${par}`
+            setTimeout(() => {
+                this.openNav = false;
+            }, 500);
+            setTimeout(() => {
+                location.hash = `#${par}`
+            }, 1000);
         }
     }
 });
