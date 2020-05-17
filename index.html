@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      mane="description"
+      content="I am an full-stack web developer how is always curious on exploring new stuffs and learn 
+      by doing stuffs."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Arun | Profile</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div id="app" class="wrapper">
+      <header>
+        <b class="name">Arun.</b>
+      </header>
+      <aside class="social-media">
+        <ul class="media-content">
+          <li>
+            <a href="#instagram">
+              <img height="14px" src="./assets/insta.svg" alt="instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="#slack">
+              <img height="14px" src="./assets/slack.svg" alt="slack" />
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <aside class="menu-aside">
+          <div class="menu-wrapper">
+            <div class="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="text">MENU</div>
+          </div>
+      </aside>
+      <main>
+        <section class="landing">
+          <div :class="`section-1 ${sectionOne ? 'scrolled' : ''}`">
+            <div class="left">
+              <div :class="`left-content ${sectionOne ? 'show' : ''}`">
+                <b>~~ since 2018</b>
+                <h2>Hello, my name is Arun.</h2>
+                <p>
+                  I am an full-stack web developer how is always curious on
+                  exploring new stuffs and learn by doing stuffs.
+                </p>
+              </div>
+              <h1 class="hello">HE<br />LLO<span>.</span></h1>
+            </div>
+            <div class="right">
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- production version, optimized for size and speed 
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
