@@ -12,7 +12,13 @@ const app = new Vue({
     },
     methods: {
         handleScroll(e) {
-            if (window.pageYOffset > 50) {
+            if (window.pageYOffset > 50 && window.pageYOffset < 100) {
+                location.hash = "#about"
+            }
+            if (window.pageYOffset > 50 && window.pageYOffset < 100) {
+                location.hash = "#about"
+            }
+            if (window.pageYOffset > 50 && window.pageYOffset < 100) {
                 location.hash = "#about"
             }
             if (window.pageYOffset < 45) {
