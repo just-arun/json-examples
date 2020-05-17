@@ -577,6 +577,7 @@ body {
               font-size: 1.5rem;
               font-weight: 900;
               margin: 20px 0;
+              margin-bottom: 40px;
             }
             .input-field {
               position: relative;
@@ -592,10 +593,19 @@ body {
                   border: 1px solid rgb(0, 0, 0);
                   background: #fff;
                 }
+                &:focus, &:valid {
+                  &+label {
+                    top: -8px;
+                    left: 8px;
+                    background: #fff;
+                  }
+                }
               }
               label {
                 position: absolute;
-                top: 0px;
+                top: 14px;
+                left: 16px;
+                font-size: 1rem;
               }
             }
           }

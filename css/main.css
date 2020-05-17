@@ -783,6 +783,7 @@ body {
   font-size: 1.5rem;
   font-weight: 900;
   margin: 20px 0;
+  margin-bottom: 40px;
 }
 
 .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field {
@@ -805,9 +806,17 @@ body {
   background: #fff;
 }
 
+.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:focus + label, .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:valid + label {
+  top: -8px;
+  left: 8px;
+  background: #fff;
+}
+
 .wrapper section.landing .section-1.contact .contact-section .contact-content .input-field label {
   position: absolute;
-  top: 0px;
+  top: 14px;
+  left: 16px;
+  font-size: 1rem;
 }
 
 @-webkit-keyframes animateWidthFull {
