@@ -423,10 +423,10 @@ body {
         // animation: hundredToZero .5s 1 forwards ease-in-out;
       }
       .projects-section {
-        position: relative;
-        opacity: 0;
-        width: 0%;
-        overflow: hidden;
+        // position: relative;
+        // opacity: 0;
+        // width: 0%;
+        // overflow: hidden;
       }
       &.hi {
         .left {
@@ -539,14 +539,18 @@ body {
       &.projects {
         .projects-section {
           position: relative;
+          top: 40px;
           left: 40px;
           opacity: 1;
-          width: 100%;
           background: #eee;
           overflow-y: auto;
+          max-height: calc(100vh - 40px);
+          min-height: calc(100vh - 40px);
           @include lg() {
-            max-height: calc(100vh - 40px);
-            min-height: calc(100vh - 40px);
+            width: calc(100% - 80px);
+          }
+          .projects-section-content {
+
           }
         }
       }
