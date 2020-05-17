@@ -482,6 +482,7 @@ body {
           width: 100%;
           .tech-content {
             animation: fadeInTop 1s 1s 1 forwards ease-in-out;
+            padding: 30px;
             @include lg() {
               padding: 80px;
               max-width: 600px;
@@ -514,6 +515,13 @@ body {
               font-size: 1rem;
               font-weight: 400;
               line-height: 1.8rem;
+              a {
+                color: grey;
+                text-decoration: none;
+                &:hover {
+                  color: $primaryColor;
+                }
+              }
             }
           }
         }

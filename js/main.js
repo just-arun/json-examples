@@ -15,7 +15,7 @@ const app = new Vue({
             if (window.pageYOffset > 50 && window.pageYOffset < 200) {
                 location.hash = "#about"
             }
-            if (window.pageYOffset > 250 && window.pageYOffset < 400) {
+            if (window.pageYOffset > 250 && window.pageYOffset < 300) {
                 location.hash = "#tech"
             }
             if (window.pageYOffset > 450 && window.pageYOffset < 600) {
