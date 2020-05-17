@@ -480,6 +480,12 @@ body {
   opacity: 1;
 }
 
+.wrapper section.landing .section-1 .tech-section .tech-content {
+  position: relative;
+  opacity: 0;
+  top: -50px;
+}
+
 .wrapper section.landing .section-1.hi .left .hello {
   opacity: 1;
 }
@@ -558,6 +564,11 @@ body {
   left: 0%;
   opacity: 1;
   width: 100%;
+}
+
+.wrapper section.landing .section-1.tech .tech-section .tech-content {
+  -webkit-animation: fadeInTop 1s 1s 1 forwards ease-in-out;
+          animation: fadeInTop 1s 1s 1 forwards ease-in-out;
 }
 
 @media screen and (min-width: 650px) {
@@ -769,21 +780,25 @@ body {
   }
 }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeInTop {
   from {
     opacity: 0;
+    top: -50px;
   }
   to {
     opacity: 1;
+    top: 0px;
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInTop {
   from {
     opacity: 0;
+    top: -50px;
   }
   to {
     opacity: 1;
+    top: 0px;
   }
 }
 /*# sourceMappingURL=main.css.map */
