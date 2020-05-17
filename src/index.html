@@ -35,29 +35,60 @@
         </ul>
       </aside>
       <aside class="menu-aside">
-          <div class="menu-wrapper" @click="openNav=!openNav">
-            <div class="menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="text">MENU</div>
+        <div class="menu-wrapper" @click="openNav=!openNav">
+          <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
+          <div class="text">MENU</div>
+        </div>
       </aside>
-      <aside class="navigation" :style="`transform: translateX(${openNav ? '0vw' : '-100vw' });`">
+      <aside
+        class="navigation"
+        :style="`transform: translateX(${openNav ? '0vw' : '-100vw' });`"
+      >
         <nav>
           <ul>
-            <li><button @click="navLink('about')" :class="`nave-link ${sectionOne === 'about' ? 'active' : ''}`">About</button></li>
-            <li><button @click="navLink('tech')" :class="`nave-link ${sectionOne === 'tech' ? 'active' : ''}`">Tech</button></li>
-            <li><button @click="navLink('projects')" :class="`nave-link ${sectionOne === 'projects' ? 'active' : ''}`">Projects</button></li>
-            <li><button @click="navLink('contact')" :class="`nave-link ${sectionOne === 'contact' ? 'active' : ''}`">Contact</button></li>
+            <li>
+              <button
+                @click="navLink('about')"
+                :class="`nave-link ${sectionOne === 'about' ? 'active' : ''}`"
+              >
+                About
+              </button>
+            </li>
+            <li>
+              <button
+                @click="navLink('tech')"
+                :class="`nave-link ${sectionOne === 'tech' ? 'active' : ''}`"
+              >
+                Tech
+              </button>
+            </li>
+            <li>
+              <button
+                @click="navLink('projects')"
+                :class="`nave-link ${sectionOne === 'projects' ? 'active' : ''}`"
+              >
+                Projects
+              </button>
+            </li>
+            <li>
+              <button
+                @click="navLink('contact')"
+                :class="`nave-link ${sectionOne === 'contact' ? 'active' : ''}`"
+              >
+                Contact
+              </button>
+            </li>
           </ul>
         </nav>
       </aside>
       <main>
         <section class="landing">
-          <div :class="`section-1 ${sectionOne}`">
-            <!-- <div :class="`section-1 tech`"> -->
+          <!-- <div :class="`section-1 ${sectionOne}`"> -->
+          <div :class="`section-1 tech`">
             <div class="left">
               <div :class="`left-content ${sectionOne}`">
                 <b>~~ since 2018</b>
@@ -69,8 +100,7 @@
               </div>
               <h1 class="hello">HE<br />LLO<span>.</span></h1>
             </div>
-            <div class="right">
-            </div>
+            <div class="right"></div>
             <div class="tech-section">
               <div class="tech-content">
                 <h2 class="tech-i-do">
@@ -78,8 +108,18 @@
                 </h2>
                 <h3>How i do tech</h3>
                 <p>
-                  I Tends to work equally on both front end and backend, i prefer <a target="_blank" href="https://nodejs.org">nodejs</a>, <a target="_blank" href="https://expressjs.com">express</a> as my backend with mongodb as my database
-                  and <a href="https://nuxtjs.org">nuxtjs</a> as frontend framework
+                  I Tends to work equally on both front end and backend, i
+                  prefer
+                  <a target="_blank" href="https://nodejs.org">nodejs</a>,
+                  <a target="_blank" href="https://expressjs.com">express</a> as
+                  my backend with mongodb as my database and
+                  <a target="_blank" href="https://nuxtjs.org">nuxtjs</a> as
+                  frontend framework, i like to explore new stuffs and started
+                  digging on
+                  <a target="_blank" href="https://flutter.dev">Flutter</a>, and
+                  <a href="https://golang.org/">GO</a> since 2019 and gaining
+                  some momentum over it. and started working on my open source
+                  projects
                 </p>
               </div>
             </div>
