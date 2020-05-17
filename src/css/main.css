@@ -643,6 +643,12 @@ body {
           animation: fiftyToZero 1s 1 forwards ease-in-out;
 }
 
+.wrapper section.landing .section-1.projects .tech-section {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  width: 0%;
+}
+
 .wrapper section.landing .section-1.projects .projects-section {
   position: relative;
   top: 40px;
@@ -655,8 +661,8 @@ body {
 
 @media screen and (min-width: 650px) {
   .wrapper section.landing .section-1.projects .projects-section {
-    -webkit-animation: zeroToHundred 1s 1s forwards ease-in-out;
-            animation: zeroToHundred 1s 1s forwards ease-in-out;
+    -webkit-animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
+            animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
   }
 }
 

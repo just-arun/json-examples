@@ -482,6 +482,8 @@ body {
       &.projects {
         .tech-section {
           @extend .tech-section-active;
+          transition: 1s ease-in-out;
+          width: 0%;
         }
         .projects-section {
           position: relative;
@@ -492,7 +494,7 @@ body {
           overflow-x: hidden;
           min-height: calc(100vh - 40px);
           @include lg() {
-            animation: zeroToHundred 1s 1s forwards ease-in-out;
+            animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
           }
           .projects-section-content {
             h1 {
