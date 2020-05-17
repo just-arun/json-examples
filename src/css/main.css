@@ -642,8 +642,11 @@ body {
   color: #ff5851;
 }
 
-.wrapper section.landing .section-1.projects {
-  position: relative;
+.wrapper section.landing .section-1.projects .tech-section {
+  background: #fff;
+  width: 100%;
+  -webkit-animation: hundredToZero .3 1s 1 forwards ease-in-out;
+          animation: hundredToZero .3 1s 1 forwards ease-in-out;
 }
 
 .wrapper section.landing .section-1.projects .projects-section {
@@ -651,7 +654,7 @@ body {
   top: 40px;
   left: 40px;
   opacity: 1;
-  background: #0affca;
+  background: #fff;
   overflow-x: hidden;
   min-height: calc(100vh - 40px);
 }

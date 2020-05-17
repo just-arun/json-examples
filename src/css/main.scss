@@ -538,13 +538,17 @@ body {
         }
       }
       &.projects {
-        position: relative;
+        .tech-section {
+          background: #fff;
+          width: 100%;
+          animation: hundredToZero .3 1s 1 forwards ease-in-out;
+        }
         .projects-section {
           position: relative;
           top: 40px;
           left: 40px;
           opacity: 1;
-          background: rgb(10, 255, 202);
+          background: #fff;
           overflow-x: hidden;
           min-height: calc(100vh - 40px);
           @include lg() {
