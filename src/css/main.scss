@@ -423,10 +423,10 @@ body {
         // animation: hundredToZero .5s 1 forwards ease-in-out;
       }
       .projects-section {
-        // position: relative;
-        // opacity: 0;
-        // width: 0%;
-        // overflow: hidden;
+        position: relative;
+        opacity: 0;
+        width: 0%;
+        overflow: hidden;
       }
       &.hi {
         .left {
@@ -544,6 +544,7 @@ body {
           opacity: 1;
           background: rgb(10, 255, 202);
           overflow-y: auto;
+          overflow-x: hidden;
           max-height: calc(100vh - 40px);
           min-height: calc(100vh - 40px);
           @include lg() {
@@ -557,10 +558,26 @@ body {
                 padding: 40px;
               }
             }
+            width: 100%;
+            position: relative;
             .projects-grid {
+              position: relative;
               display: grid;
+              max-width: 100%;
               grid-template-columns: 1fr 1fr 1fr;
-              
+              padding: 10px;
+              box-sizing: border-box;
+              @include lg() {
+                grid-gap: 20px;
+              }
+              .projects-grid-child {
+                position: relative;
+                width: 100%;
+                img {
+                  position: relative;
+                  width: 100%;
+                }
+              }
             }
           }
         }
