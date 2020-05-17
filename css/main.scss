@@ -360,6 +360,9 @@ body {
           top: -50px;
           opacity: 0;
           animation: leftPartFrom .8s 1 forwards ease-in-out;
+          &.about {
+            animation: leftPartTo 1s .8s 1 forwards ease-in-out;
+          }
           b {
             font-weight: 500;
             font-size: .8rem;
@@ -452,9 +455,6 @@ body {
           @include sm() {
             .left-content {
               left: 10%;
-              &.about {
-                animation: leftPartTo 1s .8s 1 forwards ease-in-out;
-              }
             }
           }
           .hello {

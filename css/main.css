@@ -498,6 +498,11 @@ body {
           animation: leftPartFrom .8s 1 forwards ease-in-out;
 }
 
+.wrapper section.landing .section-1 .left .left-content.about {
+  -webkit-animation: leftPartTo 1s .8s 1 forwards ease-in-out;
+          animation: leftPartTo 1s .8s 1 forwards ease-in-out;
+}
+
 .wrapper section.landing .section-1 .left .left-content b {
   font-weight: 500;
   font-size: .8rem;
@@ -607,10 +612,6 @@ body {
 @media screen and (max-width: 650px) {
   .wrapper section.landing .section-1.about .left .left-content {
     left: 10%;
-  }
-  .wrapper section.landing .section-1.about .left .left-content.about {
-    -webkit-animation: leftPartTo 1s .8s 1 forwards ease-in-out;
-            animation: leftPartTo 1s .8s 1 forwards ease-in-out;
   }
 }
 
