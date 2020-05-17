@@ -193,12 +193,15 @@ body {
 }
 
 .wrapper header .name {
-  text-decoration: none;
-  color: #2e2e2e;
   font-weight: 700;
   position: relative;
   padding-left: 40px;
   top: 12px;
+}
+
+.wrapper header .name a {
+  text-decoration: none;
+  color: #2e2e2e;
 }
 
 .wrapper aside.social-media {
@@ -454,7 +457,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-weight: 900;
-  opacity: 1;
+  opacity: 0;
 }
 
 @media screen and (max-width: 650px) {
@@ -476,6 +479,10 @@ body {
   width: 0%;
 }
 
+.wrapper section.landing .section-1.hi .left .hello {
+  opacity: 1;
+}
+
 .wrapper section.landing .section-1.about {
   overflow: hidden;
 }
@@ -489,6 +496,10 @@ body {
   .wrapper section.landing .section-1.about .left .left-content {
     left: 10%;
   }
+}
+
+.wrapper section.landing .section-1.about .left .hello {
+  opacity: 1;
 }
 
 @media screen and (max-width: 650px) {
