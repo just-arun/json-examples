@@ -565,6 +565,28 @@ body {
   padding: 20px;
 }
 
+.wrapper section.landing .section-1.tech .tech-section .tech-content h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ff5851;
+  position: relative;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  line-height: 2.6rem;
+}
+
+.wrapper section.landing .section-1.tech .tech-section .tech-content h2::before {
+  position: absolute;
+  content: '';
+  top: -20px;
+  left: 0px;
+  padding: 10px;
+  background: #ff5851;
+  width: 50%;
+}
+
 @-webkit-keyframes animateWidthFull {
   from {
     width: 50%;

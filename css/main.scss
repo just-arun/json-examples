@@ -474,6 +474,24 @@ body {
           .tech-content {
             max-width: 700px;
             padding: 20px;
+            h2 {
+              font-size: 3rem;
+              text-transform: uppercase;
+              font-weight: 900;
+              color: $primaryColor;
+              position: relative;
+              width: min-content;
+              line-height: 2.6rem;
+              &::before {
+                position: absolute;
+                content: '';
+                top: -20px;
+                left: 0px;
+                padding: 10px;
+                background: $primaryColor;
+                width: 50%;
+              }
+            }
           }
         }
       }
