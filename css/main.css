@@ -488,13 +488,6 @@ body {
   top: -50px;
 }
 
-.wrapper section.landing .section-1 .projects-section {
-  position: relative;
-  opacity: 0;
-  width: 0%;
-  overflow: hidden;
-}
-
 .wrapper section.landing .section-1.hi .left {
   width: 50%;
   -webkit-animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
@@ -643,13 +636,19 @@ body {
 
 .wrapper section.landing .section-1.projects .projects-section {
   position: relative;
+  top: 40px;
   left: 40px;
   opacity: 1;
-  width: 100%;
   background: #eee;
   overflow-y: auto;
   max-height: calc(100vh - 40px);
   min-height: calc(100vh - 40px);
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper section.landing .section-1.projects .projects-section {
+    width: calc(100% - 80px);
+  }
 }
 
 @-webkit-keyframes animateWidthFull {
