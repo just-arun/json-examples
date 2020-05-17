@@ -639,7 +639,7 @@ body {
   top: 40px;
   left: 40px;
   opacity: 1;
-  background: #eee;
+  background: #0affca;
   overflow-y: auto;
   max-height: calc(100vh - 40px);
   min-height: calc(100vh - 40px);
@@ -649,6 +649,24 @@ body {
   .wrapper section.landing .section-1.projects .projects-section {
     width: calc(100% - 80px);
   }
+}
+
+.wrapper section.landing .section-1.projects .projects-section .projects-section-content h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper section.landing .section-1.projects .projects-section .projects-section-content h1 {
+    padding: 40px;
+  }
+}
+
+.wrapper section.landing .section-1.projects .projects-section .projects-section-content .projects-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 @-webkit-keyframes animateWidthFull {
