@@ -543,6 +543,12 @@ body {
           animation: fiftyToZero 1s 1 forwards ease-in-out;
 }
 
+.wrapper section.landing .section-1.tech .tech-section {
+  background: #000;
+  -webkit-animation: zeroToHundred .3 1s 1 forwards ease-in-out;
+          animation: zeroToHundred .3 1s 1 forwards ease-in-out;
+}
+
 @-webkit-keyframes animateWidthFull {
   from {
     width: 50%;
@@ -686,6 +692,46 @@ body {
   to {
     opacity: 0;
     width: 0%;
+  }
+}
+
+@-webkit-keyframes zeroToHundred {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes zeroToHundred {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */
