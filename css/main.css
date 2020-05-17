@@ -176,8 +176,14 @@ body {
   left: 0px;
   width: 100%;
   background: #fff;
-  z-index: 1;
+  z-index: 5;
   height: 40px;
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper header.nav-open {
+    padding: 50px;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -319,8 +325,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
+  -webkit-transition: left 500ms cubic-bezier(1, 0, 0, 1) 0ms, -webkit-transform 500ms cubic-bezier(1, 0, 0, 1) 0ms;
+  transition: left 500ms cubic-bezier(1, 0, 0, 1) 0ms, -webkit-transform 500ms cubic-bezier(1, 0, 0, 1) 0ms;
+  transition: transform 500ms cubic-bezier(1, 0, 0, 1) 0ms, left 500ms cubic-bezier(1, 0, 0, 1) 0ms;
+  transition: transform 500ms cubic-bezier(1, 0, 0, 1) 0ms, left 500ms cubic-bezier(1, 0, 0, 1) 0ms, -webkit-transform 500ms cubic-bezier(1, 0, 0, 1) 0ms;
 }
 
 .wrapper aside.navigation nav {
