@@ -643,6 +643,14 @@ body {
           animation: fiftyToZero 1s 1 forwards ease-in-out;
 }
 
+.wrapper section.landing .section-1.projects .tech-section {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  width: 0%;
+  -webkit-animation: leftPartTo 1s 1 forwards ease-in-out;
+          animation: leftPartTo 1s 1 forwards ease-in-out;
+}
+
 .wrapper section.landing .section-1.projects .projects-section {
   position: relative;
   top: 40px;

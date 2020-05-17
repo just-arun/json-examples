@@ -482,6 +482,9 @@ body {
       &.projects {
         .tech-section {
           @extend .tech-section-active;
+          transition: 1s ease-in-out;
+          width: 0%;
+          animation: leftPartTo 1s 1 forwards ease-in-out;
         }
         .projects-section {
           position: relative;
@@ -600,7 +603,6 @@ body {
     width: 100%;
   }
 }
-
 @keyframes fadeInTop {
   from {
     opacity: 0;
