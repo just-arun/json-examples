@@ -1,7 +1,7 @@
 const app = new Vue({
     el: "#app",
     data: {
-        sectionOne: '',
+        sectionOne: 'hello',
         windowHeight: 0,
         openNav: false
     },
@@ -25,14 +25,14 @@ const app = new Vue({
                 location.hash = "#contact"
             }
             if (window.pageYOffset < 45) {
-                location.hash = "#"
+                location.hash = "#hello"
             }
         },
         handleSectionChange() {
             console.log(location.hash);
             switch (location.hash) {
                 case "":
-                    this.sectionOne = ''
+                    this.sectionOne = 'hi'
                     break;
                 case "#about":
                     this.sectionOne = 'about'
