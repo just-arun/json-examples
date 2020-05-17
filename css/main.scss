@@ -226,7 +226,6 @@ body {
       transition: .2s !important;
       @include sm() {
         display: none;
-        top: 0px;
       }
       .menu-wrapper {
         position: absolute;
@@ -291,7 +290,6 @@ body {
     @extend .no-select;
     .section-1 {
       display: flex;
-      top: 40px;
       position: sticky;
       height: 100vh;
       width: 100%;

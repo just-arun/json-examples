@@ -239,7 +239,6 @@ body {
 @media screen and (max-width: 650px) {
   .wrapper aside.menu-aside {
     display: none;
-    top: 0px;
   }
 }
 
@@ -327,7 +326,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 40px;
   position: -webkit-sticky;
   position: sticky;
   height: 100vh;
