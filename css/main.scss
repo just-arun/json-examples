@@ -327,7 +327,7 @@ body {
     }
   }
   section.landing {
-    height: 200vh;
+    height: calc(100vh + 400);
     @include lg() {
       width: 100%;
     }

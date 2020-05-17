@@ -2,7 +2,8 @@ const app = new Vue({
     el: "#app",
     data: {
         sectionOne: '',
-        windowHeight: 0
+        windowHeight: 0,
+        openNav: false
     },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);

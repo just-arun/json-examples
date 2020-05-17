@@ -44,7 +44,7 @@
             <div class="text">MENU</div>
           </div>
       </aside>
-      <aside class="navigation">
+      <aside class="navigation" :style="`transform: translateX(${openNav ? });`">
         <nav>
           <ul>
             <li><button @click="navLink('about')" :class="`nave-link ${sectionOne === 'about' ? 'active' : ''}`">About</button></li>
