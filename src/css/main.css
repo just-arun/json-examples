@@ -334,7 +334,22 @@ body {
   font-size: 2rem;
   font-weight: 900;
   outline: none;
-  background: #eee;
+  background: #fff;
+  position: relative;
+}
+
+.wrapper aside.navigation nav ul li button::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #ff1749;
+  z-index: 6;
+}
+
+.wrapper aside.navigation nav ul li button.active {
+  background: #ddd;
 }
 
 .wrapper section.landing {
@@ -344,7 +359,7 @@ body {
 
 @media screen and (min-width: 650px) {
   .wrapper section.landing {
-    width: calc(100% - 80px);
+    width: 100%;
   }
 }
 
