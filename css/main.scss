@@ -406,7 +406,7 @@ body {
 
       .right {
         background: #f8f8f8;
-        width: 50%;
+        width: 0%;
         overflow: hidden;
       }
 
@@ -422,12 +422,21 @@ body {
         }
         // animation: hundredToZero .5s 1 forwards ease-in-out;
       }
+      .projects-section {
+        opacity: 0;
+        width: 0%;
+        overflow: hidden;
+      }
       &.hi {
         .left {
+          width: 50%;
           animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
           .hello {
             opacity: 1;
           }
+        }
+        .right {
+          width: 50%
         }
       }
       &.about {
@@ -526,8 +535,12 @@ body {
           }
         }
       }
-      &.projects-section {
-
+      &.projects {
+        .projects-section {
+          opacity: 1;
+          width: 100%;
+          overflow: hidden;
+        }
       }
     }
   }
