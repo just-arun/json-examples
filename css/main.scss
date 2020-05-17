@@ -293,12 +293,7 @@ body {
       position: sticky;
       height: 100vh;
       width: 100%;
-      @include lg() {
-        top: 40px;
-      }
-      @include sm() {
-        top: 0px;
-      }
+      top: 0px;
       .left {
         background: $primaryColor;
         width: 50%;
