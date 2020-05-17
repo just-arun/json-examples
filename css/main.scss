@@ -423,6 +423,7 @@ body {
         // animation: hundredToZero .5s 1 forwards ease-in-out;
       }
       .projects-section {
+        position: relative;
         opacity: 0;
         width: 0%;
         overflow: hidden;
@@ -536,16 +537,15 @@ body {
         }
       }
       &.projects {
-        position: relative;
         .projects-section {
           position: relative;
           left: 40px;
           opacity: 1;
           width: 100%;
-          @include lg() {
+          background: #eee;
+          overflow-y: auto;
             max-height: calc(100vh - 40px);
             min-height: calc(100vh - 40px);
-          }
         }
       }
     }
