@@ -570,83 +570,9 @@ body {
           animation: fiftyToZero 1s 1 forwards ease-in-out;
 }
 
-.wrapper section.landing .section-1.tech .tech-section {
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  left: 0%;
-  opacity: 1;
-  width: 100%;
-}
-
-.wrapper section.landing .section-1.tech .tech-section .tech-content {
-  -webkit-animation: fadeInTop 1s 1s 1 forwards ease-in-out;
-          animation: fadeInTop 1s 1s 1 forwards ease-in-out;
-  padding: 30px;
-}
-
-@media screen and (min-width: 650px) {
-  .wrapper section.landing .section-1.tech .tech-section .tech-content {
-    padding: 80px;
-    max-width: 600px;
-  }
-}
-
-.wrapper section.landing .section-1.tech .tech-section .tech-content h2 {
-  font-size: 2.6rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #ff5851;
-  position: relative;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  line-height: 2.6rem;
-}
-
-.wrapper section.landing .section-1.tech .tech-section .tech-content h2::before {
-  position: absolute;
-  content: '';
-  top: -20px;
-  left: 0px;
-  padding: 10px;
-  background: #ff5851;
-  width: 50%;
-}
-
-.wrapper section.landing .section-1.tech .tech-section .tech-content h3 {
-  font-size: 2rem;
-  font-weight: 900;
-  margin: 20px 0;
-}
-
-.wrapper section.landing .section-1.tech .tech-section .tech-content p {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-}
-
-.wrapper section.landing .section-1.tech .tech-section .tech-content p a {
-  color: grey;
-  text-decoration: none;
-}
-
-.wrapper section.landing .section-1.tech .tech-section .tech-content p a:hover {
-  color: #ff5851;
-}
-
 .wrapper section.landing .section-1.projects .tech-section {
   background: #fff;
-  width: 100%;
-  -webkit-animation: hundredToZero .3 1s 1 forwards ease-in-out;
-          animation: hundredToZero .3 1s 1 forwards ease-in-out;
+  width: 0%;
 }
 
 .wrapper section.landing .section-1.projects .projects-section {
@@ -685,7 +611,7 @@ body {
   position: relative;
   display: -ms-grid;
   display: grid;
-  max-width: 100%;
+  max-width: 80%;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
