@@ -297,7 +297,7 @@ body {
       .left {
         background: $primaryColor;
         width: 50%;
-        animation: animateWidthHalf 1s 1 forwards ease-in-out;
+        animation: animateWidthHalf 1s 1s 1 forwards ease-in-out;
         display: flex;
         align-items: center;
         position: relative;
@@ -308,7 +308,7 @@ body {
           top: -50px;
           opacity: 0;
           animation: leftPartFrom .8s 1 forwards ease-in-out;
-          &.show {
+          &.about {
             animation: leftPartTo 1s .8s 1 forwards ease-in-out;
           }
           b {
@@ -350,7 +350,7 @@ body {
         overflow: hidden;
       }
 
-      &.scrolled {
+      &.about {
         overflow: hidden;
 
         .left {

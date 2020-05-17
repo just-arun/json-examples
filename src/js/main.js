@@ -1,7 +1,7 @@
 const app = new Vue({
     el: "#app",
     data: {
-        sectionOne: false,
+        sectionOne: 'false',
         windowHeight: 0
     },
     mounted() {
@@ -22,10 +22,10 @@ const app = new Vue({
             console.log(location.hash);
             switch (location.hash) {
                 case "":
-                    this.sectionOne = false
+                    this.sectionOne = ''
                     break;
                 case "#about":
-                    this.sectionOne = true
+                    this.sectionOne = 'about'
                     break;
             }
         }
