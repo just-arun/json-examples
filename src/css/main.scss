@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import "./scss/colors";
+@import "./scss/mixins";
 @import "./scss/classes";
 
 html,
@@ -146,16 +147,6 @@ body {
   overflow-x: hidden;
 }
 
-@mixin sm {
-  @media screen and (max-width: 650px) {
-    @content;
-  }
-}
-@mixin lg {
-  @media screen and (min-width: 650px) {
-    @content;
-  }
-}
 
 .no-select {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -429,6 +420,7 @@ body {
         width: 0%;
         overflow: hidden;
         background: #fff;
+        height: 100vh;
       }
       &.hi {
         .left {
@@ -484,13 +476,12 @@ body {
           animation: fiftyToZero 1s 1 forwards ease-in-out;
         }
         .tech-section {
-          @extend .tech-section-active
+          @extend .tech-section-active;
         }
       }
       &.projects {
         .tech-section {
-          background: #fff;
-          width: 0%;
+          @extend .tech-section-active;
         }
         .projects-section {
           position: relative;
@@ -501,7 +492,7 @@ body {
           overflow-x: hidden;
           min-height: calc(100vh - 40px);
           @include lg() {
-            width: calc(100% - 80px);
+            animation: zeroToHundred 1s 1s forwards ease-in-out;
           }
           .projects-section-content {
             h1 {
@@ -516,13 +507,10 @@ body {
             .projects-grid {
               position: relative;
               display: grid;
-              max-width: 80%;
+              max-width:100%;
               grid-template-columns: 1fr 1fr 1fr;
               padding: 10px;
               box-sizing: border-box;
-              @include lg() {
-                grid-gap: 20px;
-              }
               .projects-grid-child {
                 position: relative;
                 width: 100%;
