@@ -5,7 +5,10 @@ const app = new Vue({
         windowHeight: 0,
         openNav: false,
         contact: {
-            name
+            name: '',
+            email: '',
+            company: '',
+            
         }
     },
     mounted() {
