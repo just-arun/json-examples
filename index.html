@@ -127,18 +127,44 @@
               <div class="projects-section-content">
                 <h1>Recent Projects</h1>
                 <div class="projects-grid">
-                  <div class="projects-grid-child"><img src="./assets/projects/comunity.jpg" alt="text-editor"></div>
-                  <div class="projects-grid-child"><img src="./assets/projects/blog.jpg" alt="text-editor"></div>
-                  <div class="projects-grid-child"><img src="./assets/projects/text-editor.jpg" alt="text-editor"></div>
-                  <div class="projects-grid-child"><img src="./assets/projects/monitoring.png" alt="text-editor"></div>
+                  <div class="projects-grid-child">
+                    <img
+                      src="./assets/projects/comunity.jpg"
+                      alt="text-editor"
+                    />
+                  </div>
+                  <div class="projects-grid-child">
+                    <img src="./assets/projects/blog.jpg" alt="text-editor" />
+                  </div>
+                  <div class="projects-grid-child">
+                    <img
+                      src="./assets/projects/text-editor.jpg"
+                      alt="text-editor"
+                    />
+                  </div>
+                  <div class="projects-grid-child">
+                    <img
+                      src="./assets/projects/monitoring.png"
+                      alt="text-editor"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
             <div class="contact-section">
               <div class="contact-content">
                 <form @submit.prevent="senMessage()">
-                  <h3>Contact Me</h3>
-                  <input type="text" name="name" v-model="contact.name">
+                  <h3 class="title">Contact Me</h3>
+                  <div class="input-field">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      v-model="contact.name"
+                      autocomplete="off"
+                    />
+                    <label for="name">name</label>
+                  </div>
                 </form>
               </div>
             </div>

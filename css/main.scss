@@ -572,6 +572,14 @@ body {
           .contact-content {
             @include lg {
               min-width: 400px;
+            }
+            .title {
+              font-size: 1.5rem;
+              font-weight: 900;
+              margin: 20px 0;
+            }
+            .input-field {
+              position: relative;
               input {
                 outline: none;
                 width: 100%;
@@ -584,6 +592,10 @@ body {
                   border: 1px solid rgb(0, 0, 0);
                   background: #fff;
                 }
+              }
+              label {
+                position: absolute;
+                top: 0px;
               }
             }
           }

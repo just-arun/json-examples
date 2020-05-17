@@ -777,20 +777,37 @@ body {
   .wrapper section.landing .section-1.contact .contact-section .contact-content {
     min-width: 400px;
   }
-  .wrapper section.landing .section-1.contact .contact-section .contact-content input {
-    outline: none;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 10px;
-    font-size: 1.2rem;
-    background: #eee;
-    border: 1px solid transparent;
-  }
-  .wrapper section.landing .section-1.contact .contact-section .contact-content input:focus {
-    border: 1px solid black;
-    background: #fff;
-  }
+}
+
+.wrapper section.landing .section-1.contact .contact-section .contact-content .title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field {
+  position: relative;
+}
+
+.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input {
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 1.2rem;
+  background: #eee;
+  border: 1px solid transparent;
+}
+
+.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field input:focus {
+  border: 1px solid black;
+  background: #fff;
+}
+
+.wrapper section.landing .section-1.contact .contact-section .contact-content .input-field label {
+  position: absolute;
+  top: 0px;
 }
 
 @-webkit-keyframes animateWidthFull {
