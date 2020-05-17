@@ -308,7 +308,7 @@ body {
           top: -50px;
           opacity: 0;
           animation: leftPartFrom .8s 1 forwards ease-in-out;
-          &.show {
+          &.about {
             animation: leftPartTo 1s .8s 1 forwards ease-in-out;
           }
           b {
@@ -350,7 +350,7 @@ body {
         overflow: hidden;
       }
 
-      &.scrolled {
+      &.about {
         overflow: hidden;
 
         .left {

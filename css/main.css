@@ -357,7 +357,7 @@ body {
           animation: leftPartFrom .8s 1 forwards ease-in-out;
 }
 
-.wrapper section.landing .section-1 .left .left-content.show {
+.wrapper section.landing .section-1 .left .left-content.about {
   -webkit-animation: leftPartTo 1s .8s 1 forwards ease-in-out;
           animation: leftPartTo 1s .8s 1 forwards ease-in-out;
 }
@@ -406,28 +406,28 @@ body {
   overflow: hidden;
 }
 
-.wrapper section.landing .section-1.scrolled {
+.wrapper section.landing .section-1.about {
   overflow: hidden;
 }
 
-.wrapper section.landing .section-1.scrolled .left {
+.wrapper section.landing .section-1.about .left {
   -webkit-animation: animateWidthFull 1s 1 forwards ease-in-out;
           animation: animateWidthFull 1s 1 forwards ease-in-out;
 }
 
 @media screen and (max-width: 650px) {
-  .wrapper section.landing .section-1.scrolled .left .left-content {
+  .wrapper section.landing .section-1.about .left .left-content {
     left: 10%;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .wrapper section.landing .section-1.scrolled .left .hello {
+  .wrapper section.landing .section-1.about .left .hello {
     top: 20%;
   }
 }
 
-.wrapper section.landing .section-1.scrolled .right {
+.wrapper section.landing .section-1.about .right {
   overflow: hidden;
   width: 0%;
 }
