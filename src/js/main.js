@@ -1,7 +1,7 @@
 const app = new Vue({
     el: "#app",
     data: {
-        sectionOne: 'contact',
+        sectionOne: 'hi',
         windowHeight: 0,
         openNav: false,
         contact: {
