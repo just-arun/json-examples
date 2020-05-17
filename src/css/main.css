@@ -826,6 +826,7 @@ body {
   position: absolute;
   top: 14px;
   left: 16px;
+  cursor: pointer;
   font-size: 1rem;
 }
 
@@ -835,6 +836,15 @@ body {
   background: #fff;
   border: 1px solid #000;
   color: #000;
+  width: 150px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.wrapper section.landing .section-1.contact .contact-section .contact-content button:hover {
+  background: #ff5851;
+  border-color: #ff5851;
+  color: #fff;
 }
 
 @-webkit-keyframes animateWidthFull {
