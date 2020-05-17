@@ -408,9 +408,9 @@ body {
       }
 
       .tech-section {
-        overflow: hidden;
-        opacity: 0;
-        width: 0%;
+        // overflow: hidden;
+        // opacity: 0;
+        // width: 0%;
       }
       &.hi {
         .left {
@@ -461,8 +461,15 @@ body {
           animation: fiftyToZero 1s 1 forwards ease-in-out;
         }
         .tech-section {
-          background: #000;
+          background: #fff;
           animation: zeroToHundred .3 1s 1 forwards ease-in-out;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          left: 0%;
+          .tech {
+            max-width: 700px;
+          }
         }
       }
     }

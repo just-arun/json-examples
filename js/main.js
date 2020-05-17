@@ -25,7 +25,7 @@ const app = new Vue({
                 location.hash = "#contact"
             }
             if (window.pageYOffset < 45) {
-                location.hash = "#hello"
+                location.hash = "#"
             }
         },
         handleSectionChange() {
