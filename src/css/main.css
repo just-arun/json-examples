@@ -347,6 +347,7 @@ body {
   outline: none;
   background: transparent;
   position: relative;
+  cursor: pointer;
 }
 
 .wrapper aside.navigation nav ul li button.nave-link::before {
@@ -469,6 +470,12 @@ body {
   overflow: hidden;
 }
 
+.wrapper section.landing .section-1 .tech-section {
+  overflow: hidden;
+  opacity: 0;
+  width: 0%;
+}
+
 .wrapper section.landing .section-1.about {
   overflow: hidden;
 }
@@ -572,6 +579,18 @@ body {
   to {
     top: 0px;
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes fiftyToZero {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fiftyToZero {
+  from {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

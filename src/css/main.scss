@@ -309,6 +309,7 @@ body {
               outline: none;
               background: transparent;
               position: relative;
+              cursor: pointer;
               &::before {
                 content: '';
                 position: absolute;
@@ -404,6 +405,12 @@ body {
         overflow: hidden;
       }
 
+      .tech-section {
+        overflow: hidden;
+        opacity: 0;
+        width: 0%;
+      }
+
       &.about {
         overflow: hidden;
 
@@ -462,5 +469,11 @@ body {
   } to {
     top: 0px;
     opacity: 1;
+  }
+}
+
+@keyframes fiftyToZero {
+  from {
+    opacity: 0;
   }
 }
