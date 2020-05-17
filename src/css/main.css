@@ -325,7 +325,7 @@ body {
   margin-left: 150px;
 }
 
-.wrapper aside.navigation nav ul li button {
+.wrapper aside.navigation nav ul li button.nave-link {
   border: 0px;
   padding: 0px 10px;
   min-width: 200px;
@@ -334,21 +334,22 @@ body {
   font-size: 2rem;
   font-weight: 900;
   outline: none;
-  background: #fff;
+  background: transparent;
   position: relative;
 }
 
-.wrapper aside.navigation nav ul li button::after {
+.wrapper aside.navigation nav ul li button.nave-link::before {
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background: #ff1749;
-  z-index: 6;
+  background: rgba(255, 23, 73, 0.308);
+  color: #fff;
 }
 
-.wrapper aside.navigation nav ul li button.active {
+.wrapper aside.navigation nav ul li button.nave-link.active {
   background: #ddd;
 }
 

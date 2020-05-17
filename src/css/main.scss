@@ -291,7 +291,7 @@ body {
         margin-left: 150px;
         ul {
           li {
-            button {
+            button.nave-link {
               border: 0px;
               padding: 0px 10px;
               min-width: 200px;
@@ -300,16 +300,18 @@ body {
               font-size: 2rem;
               font-weight: 900;
               outline: none;
-              background: #fff;
+              background: transparent;
               position: relative;
-              &::after {
+              &::before {
+                content: '';
                 position: absolute;
                 left: 0;
                 top: 0;
                 height: 100%;
                 width: 100%;
-                background: rgb(255, 23, 73);
-                z-index: 6;
+                background: rgba(255, 23, 73, 0.308);
+                transforms
+                color: #fff;
               }
               &.active {
                 background: #ddd;
