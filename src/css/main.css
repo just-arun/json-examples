@@ -166,7 +166,7 @@ body {
 
 @media screen and (min-width: 650px) {
   .wrapper {
-    padding: 40px;
+    padding: 0px 40px;
   }
 }
 
@@ -228,7 +228,7 @@ body {
   position: fixed;
   top: 40px;
   left: 0;
-  height: calc(100vh - 40px);
+  height: 100vh;
   width: 40px;
   background: #fff;
   z-index: 1;
@@ -326,7 +326,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 0px;
+  top: 40px;
   position: -webkit-sticky;
   position: sticky;
   height: 100vh;

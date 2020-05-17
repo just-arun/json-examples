@@ -170,7 +170,7 @@ body {
   min-height: 100vh;
   background: #fff;
   @include lg() {
-    padding: 40px;
+    padding: 0px 40px;
   }
   padding-bottom: 0px;
   position: relative;
@@ -219,7 +219,7 @@ body {
       position: fixed;
       top: 40px;
       left: 0;
-      height: calc(100vh - 40px);
+      height: 100vh;
       width: 40px;
       background: #fff;
       z-index: 1;
@@ -290,7 +290,7 @@ body {
     @extend .no-select;
     .section-1 {
       display: flex;
-      top: 0px;
+      top: 40px;
       position: sticky;
       height: 100vh;
       width: 100%;

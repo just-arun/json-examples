@@ -7,18 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d src"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/just-arun/just-arun.github.io.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/just-arun/just-arun.github.io/issues"
-  },
-  "homepage": "https://github.com/just-arun/just-arun.github.io",
+  "homepage": "https://just-arun.github.io/",
   "dependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^1.2.0"
   }
 }
