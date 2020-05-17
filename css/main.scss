@@ -522,13 +522,9 @@ body {
               position: relative;
               display: grid;
               max-width:600px;
-              @include cus(800px, 3000px) {
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 240px 240px 240px;
-              }
-              @include cus(600px, 800px) {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 240px 240px 240px;
+              @include cus(800px, 3000px) {
               }
               @include sm {
 
