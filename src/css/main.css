@@ -473,12 +473,6 @@ body {
   overflow: hidden;
 }
 
-.wrapper section.landing .section-1 .tech-section {
-  overflow: hidden;
-  opacity: 0;
-  width: 0%;
-}
-
 .wrapper section.landing .section-1.hi .left .hello {
   opacity: 1;
 }
@@ -544,9 +538,23 @@ body {
 }
 
 .wrapper section.landing .section-1.tech .tech-section {
-  background: #000;
+  background: #fff;
   -webkit-animation: zeroToHundred .3 1s 1 forwards ease-in-out;
           animation: zeroToHundred .3 1s 1 forwards ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0%;
+}
+
+.wrapper section.landing .section-1.tech .tech-section .tech {
+  max-width: 700px;
 }
 
 @-webkit-keyframes animateWidthFull {
