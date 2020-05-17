@@ -412,6 +412,11 @@ body {
         overflow: hidden;
         width: 0%;
         opacity: 1;
+        .tech-content {
+          position: relative;
+          opacity: 0;
+          top: -50px;
+        }
         // animation: hundredToZero .5s 1 forwards ease-in-out;
       }
       &.hi {
@@ -472,6 +477,7 @@ body {
           opacity: 1;
           width: 100%;
           .tech-content {
+            animation: fadeInTop 1s 1s 1 forwards ease-in-out;
             @include lg() {
               padding: 80px;
               max-width: 600px;
@@ -586,10 +592,12 @@ body {
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInTop {
   from {
     opacity: 0;
+    top: -50px;
   } to {
     opacity: 1;
+    top: 0px;
   }
 }
