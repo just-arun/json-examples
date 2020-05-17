@@ -754,13 +754,42 @@ body {
 
 .wrapper section.landing .section-1.contact .contact-section {
   opacity: 1;
-  background: #eee;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 650px) {
   .wrapper section.landing .section-1.contact .contact-section {
     height: calc(100vh - 40px);
     width: calc(100vw - 40px);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper section.landing .section-1.contact .contact-section .contact-content {
+    min-width: 400px;
+  }
+  .wrapper section.landing .section-1.contact .contact-section .contact-content input {
+    outline: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    font-size: 1.2rem;
+    background: #eee;
+    border: 1px solid transparent;
+  }
+  .wrapper section.landing .section-1.contact .contact-section .contact-content input:focus {
+    border: 1px solid black;
+    background: #fff;
   }
 }
 
