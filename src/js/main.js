@@ -3,7 +3,10 @@ const app = new Vue({
     data: {
         sectionOne: 'hello',
         windowHeight: 0,
-        openNav: false
+        openNav: false,
+        contact: {
+            name
+        }
     },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);

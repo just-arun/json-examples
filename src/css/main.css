@@ -498,11 +498,6 @@ body {
           animation: leftPartFrom .8s 1 forwards ease-in-out;
 }
 
-.wrapper section.landing .section-1 .left .left-content.about {
-  -webkit-animation: leftPartTo 1s .8s 1 forwards ease-in-out;
-          animation: leftPartTo 1s .8s 1 forwards ease-in-out;
-}
-
 .wrapper section.landing .section-1 .left .left-content b {
   font-weight: 500;
   font-size: .8rem;
@@ -573,10 +568,28 @@ body {
   opacity: 0;
 }
 
+.wrapper section.landing .section-1 .contact-section {
+  position: relative;
+  opacity: 0;
+  width: 0%;
+  overflow: hidden;
+  background: #fff;
+  height: 100vh;
+}
+
+.wrapper section.landing .section-1 .contact-section .projects-grid {
+  opacity: 0;
+}
+
 .wrapper section.landing .section-1.hello .left {
   width: 50%;
   -webkit-animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
           animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
+}
+
+.wrapper section.landing .section-1.hello .left .left-content {
+  -webkit-animation: leftPartTo 1s .8s 1 forwards ease-in-out;
+          animation: leftPartTo 1s .8s 1 forwards ease-in-out;
 }
 
 .wrapper section.landing .section-1.hello .left .hello {
@@ -737,6 +750,19 @@ body {
 .wrapper section.landing .section-1.projects .projects-section .projects-section-content .projects-grid .projects-grid-child img {
   position: relative;
   height: 130%;
+}
+
+.wrapper section.landing .section-1.contact .contact-section {
+  position: relative;
+  opacity: 0;
+  width: 0%;
+  overflow: hidden;
+  background: #fff;
+  height: 100vh;
+}
+
+.wrapper section.landing .section-1.contact .contact-section .projects-grid {
+  opacity: 0;
 }
 
 @-webkit-keyframes animateWidthFull {
