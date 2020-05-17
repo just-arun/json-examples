@@ -357,8 +357,7 @@ body {
       top: 0px;
       .left {
         background: $primaryColor;
-        width: 50%;
-        animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
+        width: 0%;
         display: flex;
         align-items: center;
         position: relative;
@@ -425,6 +424,7 @@ body {
       }
       &.hi {
         .left {
+          animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
           .hello {
             opacity: 1;
           }
@@ -525,6 +525,9 @@ body {
             }
           }
         }
+      }
+      &.projects-section {
+
       }
     }
   }
