@@ -498,7 +498,10 @@ body {
 
 .wrapper section.landing .section-1.tech {
   overflow: hidden;
-  width: 0%;
+}
+
+.wrapper section.landing .section-1.tech .left {
+  width: 0% !important;
 }
 
 @media screen and (max-width: 650px) {
@@ -507,15 +510,18 @@ body {
   }
 }
 
+.wrapper section.landing .section-1.tech .left .hello {
+  display: none;
+}
+
 @media screen and (max-width: 650px) {
   .wrapper section.landing .section-1.tech .left .hello {
     top: 20%;
   }
 }
 
-.wrapper section.landing .section-1.tech .right.tech {
+.wrapper section.landing .section-1.tech .right {
   overflow: hidden;
-  width: 100%;
   -webkit-animation: animateWidthFull 1s 1 forwards ease-in-out;
           animation: animateWidthFull 1s 1 forwards ease-in-out;
 }
