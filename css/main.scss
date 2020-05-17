@@ -408,9 +408,9 @@ body {
       }
 
       .tech-section {
-        // overflow: hidden;
-        // opacity: 0;
-        // width: 0%;
+        position: relative;
+        overflow: hidden;
+        // animation: hundredToZero .5s 1 forwards ease-in-out;
       }
       &.hi {
         .left {
@@ -467,7 +467,7 @@ body {
           justify-content: center;
           align-items: center;
           left: 0%;
-          .tech {
+          .tech-content {
             max-width: 700px;
           }
         }

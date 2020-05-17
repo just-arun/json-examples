@@ -473,6 +473,11 @@ body {
   overflow: hidden;
 }
 
+.wrapper section.landing .section-1 .tech-section {
+  position: relative;
+  overflow: hidden;
+}
+
 .wrapper section.landing .section-1.hi .left .hello {
   opacity: 1;
 }
@@ -553,7 +558,7 @@ body {
   left: 0%;
 }
 
-.wrapper section.landing .section-1.tech .tech-section .tech {
+.wrapper section.landing .section-1.tech .tech-section .tech-content {
   max-width: 700px;
 }
 
