@@ -1,7 +1,7 @@
 const app = new Vue({
     el: "#app",
     data: {
-        sectionOne: 'false',
+        sectionOne: '',
         windowHeight: 0
     },
     mounted() {
