@@ -8,7 +8,7 @@ const app = new Vue({
             name: '',
             email: '',
             company: '',
-            
+            message: ''
         }
     },
     mounted() {
