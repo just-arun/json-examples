@@ -290,7 +290,6 @@ body {
     @extend .no-select;
     .section-1 {
       display: flex;
-      top: 40px;
       position: sticky;
       height: 100vh;
       width: 100%;
@@ -298,7 +297,7 @@ body {
         top: 40px;
       }
       @include sm() {
-        overflow-x: hidden;
+        top: 0px;
       }
       .left {
         background: $primaryColor;

@@ -326,7 +326,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 40px;
   position: -webkit-sticky;
   position: sticky;
   height: 100vh;
@@ -341,7 +340,7 @@ body {
 
 @media screen and (max-width: 650px) {
   .wrapper section.landing .section-1 {
-    overflow-x: hidden;
+    top: 0px;
   }
 }
 
