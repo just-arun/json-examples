@@ -569,17 +569,17 @@ body {
   height: 100vh;
 }
 
-.wrapper section.landing .section-1.hi .left {
+.wrapper section.landing .section-1.hello .left {
   width: 50%;
   -webkit-animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
           animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
 }
 
-.wrapper section.landing .section-1.hi .left .hello {
+.wrapper section.landing .section-1.hello .left .hello {
   opacity: 1;
 }
 
-.wrapper section.landing .section-1.hi .right {
+.wrapper section.landing .section-1.hello .right {
   width: 50%;
 }
 
@@ -646,14 +646,13 @@ body {
 .wrapper section.landing .section-1.projects .tech-section {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  -webkit-animation: hundredToZero .5s .5 1 forwards ease-in-out;
-          animation: hundredToZero .5s .5 1 forwards ease-in-out;
+  -webkit-animation: disappear .5s .5 1 forwards ease-in-out;
+          animation: disappear .5s .5 1 forwards ease-in-out;
 }
 
 .wrapper section.landing .section-1.projects .tech-section .tech-content {
-  opacity: 0;
-  -webkit-transition: .5s ease-out !important;
-  transition: .5s ease-out !important;
+  -webkit-animation: fadeOut .5s 1 forwards ease-out;
+          animation: fadeOut .5s 1 forwards ease-out;
 }
 
 .wrapper section.landing .section-1.projects .projects-section {
@@ -668,8 +667,8 @@ body {
 
 @media screen and (min-width: 650px) {
   .wrapper section.landing .section-1.projects .projects-section {
-    -webkit-animation: zeroToHundred 1s 2s 1 forwards ease-in-out;
-            animation: zeroToHundred 1s 2s 1 forwards ease-in-out;
+    -webkit-animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
+            animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
   }
 }
 
@@ -902,6 +901,46 @@ body {
   to {
     opacity: 1;
     top: 0px;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes disappear {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+
+@keyframes disappear {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
