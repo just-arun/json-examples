@@ -487,17 +487,20 @@ body {
             animation: fadeOut .5s 1 forwards ease-out;
           }
           animation: disappear .5s .5s 1 forwards ease-in-out;
+          display: none;
         }
         .projects-section {
           position: relative;
           top: 40px;
-          left: calc(-50vw + 40px);
+          left:40px;
           opacity: 1;
           background: #fff;
           overflow-x: hidden;
           min-height: calc(100vh - 40px);
           @include lg() {
             animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
+            min-width: calc(100vw - 80px);
+            max-width: calc(100vw - 80px);
           }
           .projects-section-content {
             h1 {
@@ -518,10 +521,11 @@ body {
               padding: 10px;
               box-sizing: border-box;
               animation: fadeInTop 1s 1s 1 forwards ease-in-out;
+              margin: 0 auto;
               .projects-grid-child {
                 position: relative;
                 width: 100%;
-                height: 100%;
+                max-height: 100%;
                 overflow: hidden;
                 img {
                   position: relative;
