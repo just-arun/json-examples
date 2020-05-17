@@ -308,13 +308,16 @@ body {
                 left: 0;
                 top: 0;
                 height: 100%;
-                width: 100%;
+                width: 0%;
                 background: rgba(255, 23, 73, 0.308);
-                transforms
                 color: #fff;
+                transition: .3s;
               }
               &.active {
-                background: #ddd;
+                &::before {
+                  transform: skew(30deg);
+                  width: 100%;
+                }
               }
             }
           }

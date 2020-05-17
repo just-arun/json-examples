@@ -344,13 +344,17 @@ body {
   left: 0;
   top: 0;
   height: 100%;
-  width: 100%;
+  width: 0%;
   background: rgba(255, 23, 73, 0.308);
   color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-.wrapper aside.navigation nav ul li button.nave-link.active {
-  background: #ddd;
+.wrapper aside.navigation nav ul li button.nave-link.active::before {
+  -webkit-transform: skew(30deg);
+          transform: skew(30deg);
+  width: 100%;
 }
 
 .wrapper section.landing {

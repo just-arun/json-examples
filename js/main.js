@@ -28,6 +28,9 @@ const app = new Vue({
                     this.sectionOne = 'about'
                     break;
             }
+        },
+        navLink(par) {
+            location.
         }
     }
 });

@@ -47,7 +47,7 @@
       <aside class="navigation">
         <nav>
           <ul>
-            <li><button :class="`nave-link ${sectionOne === 'about' ? 'active' : ''}`">About</button></li>
+            <li><button @click="location.hash='#about'" :class="`nave-link ${sectionOne === 'about' ? 'active' : ''}`">About</button></li>
             <li><button :class="`nave-link ${sectionOne === 'tech' ? 'active' : ''}`">Tech</button></li>
             <li><button :class="`nave-link ${sectionOne === 'projects' ? 'active' : ''}`">Projects</button></li>
             <li><button :class="`nave-link ${sectionOne === 'contact' ? 'active' : ''}`">Contact</button></li>
@@ -71,6 +71,7 @@
             <div class="right">
             </div>
           </div>
+          <div id="about"></div>
         </section>
       </main>
     </div>
