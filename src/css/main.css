@@ -641,13 +641,21 @@ body {
 }
 
 .wrapper section.landing .section-1.projects {
-  background: #000;
+  position: relative;
 }
 
 .wrapper section.landing .section-1.projects .projects-section {
+  position: relative;
+  left: 40px;
   opacity: 1;
   width: 100%;
-  overflow: hidden;
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper section.landing .section-1.projects .projects-section {
+    max-height: calc(100vh - 40px);
+    min-height: calc(100vh - 40px);
+  }
 }
 
 @-webkit-keyframes animateWidthFull {
