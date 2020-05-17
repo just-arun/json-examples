@@ -698,8 +698,8 @@ body {
   max-width: 600px;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-rows: 240px 240px 240px;
+      grid-template-rows: 240px 240px 240px;
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

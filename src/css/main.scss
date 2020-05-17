@@ -516,8 +516,11 @@ body {
               position: relative;
               display: grid;
               max-width:600px;
+              @include cus(800px, ) {
+
+              }
               grid-template-columns: 1fr 1fr 1fr;
-              grid-template-rows: 1fr 1fr 1fr;
+              grid-template-rows: 240px 240px 240px;
               padding: 10px;
               box-sizing: border-box;
               animation: fadeInTop 1s 1s 1 forwards ease-in-out;
