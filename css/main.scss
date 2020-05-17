@@ -422,7 +422,7 @@ body {
         background: #fff;
         height: 100vh;
       }
-      &.hi {
+      &.hello {
         .left {
           width: 50%;
           animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
@@ -484,10 +484,9 @@ body {
           @extend .tech-section-active;
           transition: 1s ease-in-out;
           .tech-content {
-            opacity: 0;
-            transition: .5s ease-out !important;
+            animation: fadeOut .5s 1 forwards ease-out;
           }
-          animation: hundredToZero .5s .5 1 forwards ease-in-out;
+          animation: disappear .5s .5 1 forwards ease-in-out;
         }
         .projects-section {
           position: relative;
@@ -498,7 +497,7 @@ body {
           overflow-x: hidden;
           min-height: calc(100vh - 40px);
           @include lg() {
-            animation: zeroToHundred 1s 2s 1 forwards ease-in-out;
+            animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
           }
           .projects-section-content {
             h1 {
@@ -615,5 +614,24 @@ body {
   } to {
     opacity: 1;
     top: 0px;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes disappear {
+  from {
+    display: block;
+  } to {
+    display: none;
   }
 }
