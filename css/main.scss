@@ -410,6 +410,8 @@ body {
       .tech-section {
         position: relative;
         overflow: hidden;
+        width: 0%;
+        opacity: 1;
         // animation: hundredToZero .5s 1 forwards ease-in-out;
       }
       &.hi {
@@ -462,13 +464,16 @@ body {
         }
         .tech-section {
           background: #fff;
-          animation: zeroToHundred .3 1s 1 forwards ease-in-out;
+          // animation: zeroToHundred .3 1s 1 forwards ease-in-out;
           display: flex;
           justify-content: center;
           align-items: center;
           left: 0%;
+          opacity: 1;
+          width: 100%;
           .tech-content {
             max-width: 700px;
+            padding: 20px;
           }
         }
       }
