@@ -646,9 +646,14 @@ body {
 .wrapper section.landing .section-1.projects .tech-section {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  width: 0%;
-  -webkit-animation: leftPartTo 1s 1 forwards ease-;
-          animation: leftPartTo 1s 1 forwards ease-;
+  -webkit-animation: hundredToZero .5s .5 1 forwards ease-in-out;
+          animation: hundredToZero .5s .5 1 forwards ease-in-out;
+}
+
+.wrapper section.landing .section-1.projects .tech-section .tech-content {
+  opacity: 0;
+  -webkit-transition: .5s ease-out !important;
+  transition: .5s ease-out !important;
 }
 
 .wrapper section.landing .section-1.projects .projects-section {
@@ -663,8 +668,8 @@ body {
 
 @media screen and (min-width: 650px) {
   .wrapper section.landing .section-1.projects .projects-section {
-    -webkit-animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
-            animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
+    -webkit-animation: zeroToHundred 1s 2s 1 forwards ease-in-out;
+            animation: zeroToHundred 1s 2s 1 forwards ease-in-out;
   }
 }
 
@@ -834,10 +839,12 @@ body {
   from {
     opacity: 1;
     width: 100%;
+    visibility: visible;
   }
   to {
     opacity: 0;
     width: 0%;
+    visibility: hidden;
   }
 }
 
@@ -845,10 +852,12 @@ body {
   from {
     opacity: 1;
     width: 100%;
+    visibility: visible;
   }
   to {
     opacity: 0;
     width: 0%;
+    visibility: hidden;
   }
 }
 
