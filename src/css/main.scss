@@ -486,12 +486,12 @@ body {
           .tech-content {
             animation: fadeOut .5s 1 forwards ease-out;
           }
-          animation: disappear .5s .5 1 forwards ease-in-out;
+          animation: disappear .5s .5s 1 forwards ease-in-out;
         }
         .projects-section {
           position: relative;
           top: 40px;
-          left: 40px;
+          left: calc(-50vw + 40px);
           opacity: 1;
           background: #fff;
           overflow-x: hidden;
@@ -512,8 +512,9 @@ body {
             .projects-grid {
               position: relative;
               display: grid;
-              max-width:100%;
+              max-width:600px;
               grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: ;
               padding: 10px;
               box-sizing: border-box;
               .projects-grid-child {
@@ -631,7 +632,9 @@ body {
 @keyframes disappear {
   from {
     display: block;
+    left: 0px;
   } to {
     display: none;
+    left: -50%;
   }
 }

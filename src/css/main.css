@@ -646,8 +646,8 @@ body {
 .wrapper section.landing .section-1.projects .tech-section {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  -webkit-animation: disappear .5s .5 1 forwards ease-in-out;
-          animation: disappear .5s .5 1 forwards ease-in-out;
+  -webkit-animation: disappear .5s .5s 1 forwards ease-in-out;
+          animation: disappear .5s .5s 1 forwards ease-in-out;
 }
 
 .wrapper section.landing .section-1.projects .tech-section .tech-content {
@@ -658,7 +658,7 @@ body {
 .wrapper section.landing .section-1.projects .projects-section {
   position: relative;
   top: 40px;
-  left: 40px;
+  left: calc(-50vw + 40px);
   opacity: 1;
   background: #fff;
   overflow-x: hidden;
@@ -692,7 +692,7 @@ body {
   position: relative;
   display: -ms-grid;
   display: grid;
-  max-width: 100%;
+  max-width: 600px;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
@@ -929,18 +929,22 @@ body {
 @-webkit-keyframes disappear {
   from {
     display: block;
+    left: 0px;
   }
   to {
     display: none;
+    left: -50%;
   }
 }
 
 @keyframes disappear {
   from {
     display: block;
+    left: 0px;
   }
   to {
     display: none;
+    left: -50%;
   }
 }
 /*# sourceMappingURL=main.css.map */
