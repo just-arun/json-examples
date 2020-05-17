@@ -589,16 +589,26 @@ body {
                 font-size: 1.2rem;
                 background: #eee;
                 border: 1px solid transparent;
-                &:focus {
-                  border: 1px solid rgb(0, 0, 0);
-                  background: #fff;
-                }
+                border-radius: 5px;
                 &:focus, &:valid {
                   &+label {
                     top: -8px;
                     left: 8px;
+                    background: #eee;
+                    padding: 2px 5px;
+                    border-radius: 5px;
+                    color: grey;
+                  }
+                }
+                &:focus {
+                  border: 1px solid rgb(0, 0, 0);
+                  background: #fff;
+                  &+label {
                     background: #fff;
                   }
+                }
+                &:invalid {
+                  border-color: rgba(255, 42, 42, 0.253);
                 }
               }
               label {
