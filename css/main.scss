@@ -483,8 +483,11 @@ body {
         .tech-section {
           @extend .tech-section-active;
           transition: 1s ease-in-out;
-          width: 0%;
-          animation: leftPartTo 1s 1 forwards ease-in-out;
+          .tech-content {
+            opacity: 0;
+            transition: .5s ease-out !important;
+          }
+          animation: hundredToZero .5s .5 1 forwards ease-in-out;
         }
         .projects-section {
           position: relative;
@@ -495,7 +498,7 @@ body {
           overflow-x: hidden;
           min-height: calc(100vh - 40px);
           @include lg() {
-            animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
+            animation: zeroToHundred 1s 2s 1 forwards ease-in-out;
           }
           .projects-section-content {
             h1 {
@@ -589,9 +592,11 @@ body {
   from {
     opacity: 1;
     width: 100%;
+    visibility: visible;
   } to {
     opacity: 0;
     width: 0%;
+    visibility: hidden;
   }
 }
 @keyframes zeroToHundred {
