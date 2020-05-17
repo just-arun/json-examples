@@ -231,7 +231,7 @@ body {
   height: 100vh;
   width: 40px;
   background: #fff;
-  z-index: 1;
+  z-index: 5;
   -webkit-transition: .2s !important;
   transition: .2s !important;
 }
@@ -312,13 +312,15 @@ body {
   height: 100vh;
   width: 100vw;
   background: #fff;
-  z-index: 3;
+  z-index: 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .wrapper aside.navigation nav {
