@@ -401,6 +401,7 @@ body {
       .right {
         background: #f8f8f8;
         width: 50%;
+        background: #000;
         overflow: hidden;
       }
 
@@ -443,8 +444,9 @@ body {
           }
         }
 
-        .right {
+        .right.tech {
           overflow: hidden;
+          width: 100%;
           animation: animateWidthFull 1s 1 forwards ease-in-out;
         }
       }
