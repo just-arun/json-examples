@@ -35,7 +35,7 @@
         </ul>
       </aside>
       <aside class="menu-aside">
-          <div class="menu-wrapper">
+          <div class="menu-wrapper" @click="openNav=!openNav">
             <div class="menu">
                 <div></div>
                 <div></div>
@@ -44,7 +44,7 @@
             <div class="text">MENU</div>
           </div>
       </aside>
-      <aside class="navigation" :style="`transform: translateX(${openNav ? }-100vw);`">
+      <aside class="navigation" :style="`transform: translateX(${openNav ? '0vw' : '-100vw' });`">
         <nav>
           <ul>
             <li><button @click="navLink('about')" :class="`nave-link ${sectionOne === 'about' ? 'active' : ''}`">About</button></li>
