@@ -429,24 +429,22 @@ body {
       }
       &.tech {
           overflow: hidden;
-          width: 0%;
-
         .left {
+          width: 0% !important;
           @include sm() {
             .left-content {
               left: 10%;
             }
           }
           .hello {
+            display: none;
             @include sm() {
               top: 20%;
             }
           }
         }
-
-        .right.tech {
+        .right {
           overflow: hidden;
-          width: 100%;
           animation: animateWidthFull 1s 1 forwards ease-in-out;
         }
       }
