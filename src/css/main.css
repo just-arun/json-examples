@@ -752,6 +752,10 @@ body {
   height: 130%;
 }
 
+.wrapper section.landing .section-1.contact {
+  overflow: auto;
+}
+
 .wrapper section.landing .section-1.contact .contact-section {
   opacity: 1;
   background: #fff;
@@ -764,6 +768,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: auto;
 }
 
 @media screen and (min-width: 650px) {
@@ -771,6 +776,18 @@ body {
     height: calc(100vh - 40px);
     width: calc(100vw - 40px);
   }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper section.landing .section-1.contact .contact-section {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+  }
+}
+
+.wrapper section.landing .section-1.contact .contact-section .contact-content {
+  width: 100vw;
 }
 
 @media screen and (min-width: 650px) {

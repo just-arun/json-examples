@@ -559,20 +559,28 @@ body {
         }
       }
       &.contact {
+        overflow: auto;
         .contact-section {
           @include lg {
             height: calc(100vh - 40px);
             width: calc(100vw - 40px);
+          }
+          @include sm {
+            width: 100vw;
+            height: 100vh;
+            padding: 20px;
           }
           opacity: 1;
           background: #fff;
           display: flex;
           justify-content: center;
           align-items: center;
+          overflow: auto;
           .contact-content {
             @include lg {
               min-width: 400px;
             }
+            width: 100vw;
             .title {
               font-size: 1.5rem;
               font-weight: 900;
