@@ -491,16 +491,19 @@ body {
         }
         .projects-section {
           position: relative;
-          top: 40px;
-          left:40px;
           opacity: 1;
           background: #fff;
           overflow-x: hidden;
           min-height: calc(100vh - 40px);
           @include lg() {
+            top: 40px;
+            left:40px;
             animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
             min-width: calc(100vw - 80px);
             max-width: calc(100vw - 80px);
+          }
+          @include sm {
+            width: 100vw;
           }
           .projects-section-content {
             h1 {
@@ -509,6 +512,9 @@ body {
               @include lg() {
                 padding: 40px;
               }
+              @include sm {
+                padding: 20px 20px;
+              }
             }
             width: 100%;
             position: relative;
@@ -516,11 +522,17 @@ body {
               position: relative;
               display: grid;
               max-width:600px;
-              @include cus(800px, ) {
+              @include cus(800px, 3000px) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 240px 240px 240px;
+              }
+              @include cus(600px, 800px) {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 240px 240px 240px;
+              }
+              @include sm {
 
               }
-              grid-template-columns: 1fr 1fr 1fr;
-              grid-template-rows: 240px 240px 240px;
               padding: 10px;
               box-sizing: border-box;
               animation: fadeInTop 1s 1s 1 forwards ease-in-out;

@@ -658,8 +658,6 @@ body {
 
 .wrapper section.landing .section-1.projects .projects-section {
   position: relative;
-  top: 40px;
-  left: 40px;
   opacity: 1;
   background: #fff;
   overflow-x: hidden;
@@ -668,10 +666,18 @@ body {
 
 @media screen and (min-width: 650px) {
   .wrapper section.landing .section-1.projects .projects-section {
+    top: 40px;
+    left: 40px;
     -webkit-animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
             animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
     min-width: calc(100vw - 80px);
     max-width: calc(100vw - 80px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper section.landing .section-1.projects .projects-section {
+    width: 100vw;
   }
 }
 
@@ -691,21 +697,41 @@ body {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .wrapper section.landing .section-1.projects .projects-section .projects-section-content h1 {
+    padding: 20px 20px;
+  }
+}
+
 .wrapper section.landing .section-1.projects .projects-section .projects-section-content .projects-grid {
   position: relative;
   display: -ms-grid;
   display: grid;
   max-width: 600px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 240px 240px 240px;
-      grid-template-rows: 240px 240px 240px;
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-animation: fadeInTop 1s 1s 1 forwards ease-in-out;
           animation: fadeInTop 1s 1s 1 forwards ease-in-out;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) and (max-width: 3000px) {
+  .wrapper section.landing .section-1.projects .projects-section .projects-section-content .projects-grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 240px 240px 240px;
+        grid-template-rows: 240px 240px 240px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .wrapper section.landing .section-1.projects .projects-section .projects-section-content .projects-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 240px 240px 240px;
+        grid-template-rows: 240px 240px 240px;
+  }
 }
 
 .wrapper section.landing .section-1.projects .projects-section .projects-section-content .projects-grid .projects-grid-child {
