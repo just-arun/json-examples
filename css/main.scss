@@ -437,7 +437,7 @@ body {
             }
           }
           .hello {
-            display: none;
+            opacity: 0;
             @include sm() {
               top: 20%;
             }
@@ -484,5 +484,16 @@ body {
   } to {
     top: 0px;
     opacity: 1;
+  }
+}
+
+
+@keyframes animateWidthZero {
+  from {
+    opacity: 0;
+    width: 0%;
+  } to {
+    opacity: 1;
+    width: 50%;
   }
 }
