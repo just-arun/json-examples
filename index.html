@@ -47,10 +47,10 @@
       <aside class="navigation">
         <nav>
           <ul>
-            <li><button :class="`nave-link {sectionOne === '' ? 'active' : ''}`">about</button></li>
-            <li><button>contact</button></li>
-            <li><button>contact</button></li>
-            <li><button>contact</button></li>
+            <li><button :class="`nave-link ${sectionOne === 'about' ? 'about' : ''}`">about</button></li>
+            <li><button :class="`nave-link ${sectionOne === 'tech' ? 'active' : ''}`">tech</button></li>
+            <li><button :class="`nave-link ${sectionOne === 'projects' ? 'projects' : ''}`">projects</button></li>
+            <li><button :class="`nave-link ${sectionOne === 'contact' ? 'active' : ''}`">contact</button></li>
           </ul>
         </nav>
       </aside>
