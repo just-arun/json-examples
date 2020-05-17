@@ -1,0 +1,465 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-transition: .3s linear !important;
+  transition: .3s linear !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.no-select, .wrapper section.landing {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding: 40px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.wrapper header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+  height: 40px;
+}
+
+.wrapper header .name {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: 700;
+  position: relative;
+  padding-left: 40px;
+  top: 12px;
+}
+
+.wrapper aside.social-media {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+
+.wrapper aside.social-media .media-content li {
+  margin: 10px;
+}
+
+.wrapper aside.menu-aside {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  height: calc(100vh - 40px);
+  width: 40px;
+  background: #fff;
+  z-index: 1;
+  -webkit-transition: .2s !important;
+  transition: .2s !important;
+}
+
+.wrapper aside.menu-aside:hover {
+  width: 80px;
+}
+
+.wrapper aside.menu-aside .menu-wrapper {
+  position: absolute;
+  -webkit-transform: translateY(-50%) rotateZ(180deg);
+          transform: translateY(-50%) rotateZ(180deg);
+  cursor: pointer;
+  top: 50%;
+  left: 0px;
+  width: 60px;
+  height: 40px;
+}
+
+.wrapper aside.menu-aside .menu-wrapper .text {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  font-size: 10px;
+  position: absolute;
+  left: -24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.wrapper aside.menu-aside .menu-wrapper:hover .menu div:nth-child(1) {
+  width: 36px;
+}
+
+.wrapper aside.menu-aside .menu-wrapper:hover .menu div:nth-child(2) {
+  width: 32px;
+}
+
+.wrapper aside.menu-aside .menu-wrapper:hover .menu div:nth-child(3) {
+  width: 28px;
+}
+
+.wrapper aside.menu-aside .menu {
+  position: absolute;
+  height: 33px;
+  width: 40px;
+  padding: 0px 5px;
+  background: rgba(8, 7, 7, 0);
+  text-align: right;
+}
+
+.wrapper aside.menu-aside .menu div {
+  display: block;
+  height: 2px;
+  background: #000;
+  margin: 4px 0px;
+  -webkit-transition: .2s !important;
+  transition: .2s !important;
+}
+
+.wrapper aside.menu-aside .menu div:nth-child(1) {
+  width: 32px;
+}
+
+.wrapper aside.menu-aside .menu div:nth-child(2) {
+  width: 24px;
+}
+
+.wrapper aside.menu-aside .menu div:nth-child(3) {
+  width: 16px;
+}
+
+.wrapper section.landing {
+  height: 200vh;
+  width: calc(100% - 80px);
+  position: relative;
+}
+
+.wrapper section.landing .section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper section.landing .section-1 .left {
+  background: #ff5851;
+  width: 50%;
+  -webkit-animation: animateWidthHalf 1s 1 forwards ease-in-out;
+          animation: animateWidthHalf 1s 1 forwards ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.wrapper section.landing .section-1 .left .left-content {
+  max-width: 300px;
+  left: 20%;
+  position: relative;
+  top: -50px;
+  opacity: 0;
+  -webkit-animation: leftPartFrom .8s 1 forwards ease-in-out;
+          animation: leftPartFrom .8s 1 forwards ease-in-out;
+}
+
+.wrapper section.landing .section-1 .left .left-content.show {
+  -webkit-animation: leftPartTo 1s .8s 1 forwards ease-in-out;
+          animation: leftPartTo 1s .8s 1 forwards ease-in-out;
+}
+
+.wrapper section.landing .section-1 .left .left-content b {
+  font-weight: 500;
+  font-size: .8rem;
+  font-style: italic;
+}
+
+.wrapper section.landing .section-1 .left .left-content h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.8;
+}
+
+.wrapper section.landing .section-1 .left .left-content p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.wrapper section.landing .section-1 .left .hello {
+  font-size: 10rem;
+  position: absolute;
+  color: #202020;
+  top: 50%;
+  left: calc(100% - 6rem);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: 900;
+  opacity: 1;
+}
+
+.wrapper section.landing .section-1 .right {
+  background: #f8f8f8;
+  width: 50%;
+  overflow: hidden;
+}
+
+.wrapper section.landing .section-1.scrolled {
+  overflow: hidden;
+}
+
+.wrapper section.landing .section-1.scrolled .left {
+  -webkit-animation: animateWidthFull 1s 1 forwards ease-in-out;
+          animation: animateWidthFull 1s 1 forwards ease-in-out;
+}
+
+.wrapper section.landing .section-1.scrolled .right {
+  overflow: hidden;
+  width: 0%;
+}
+
+@-webkit-keyframes animateWidthFull {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes animateWidthFull {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes animateWidthHalf {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes animateWidthHalf {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes leftPartFrom {
+  from {
+    top: 0px;
+    opacity: 1;
+  }
+  to {
+    top: -50px;
+    opacity: 0;
+  }
+}
+
+@keyframes leftPartFrom {
+  from {
+    top: 0px;
+    opacity: 1;
+  }
+  to {
+    top: -50px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes leftPartTo {
+  from {
+    top: -50px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes leftPartTo {
+  from {
+    top: -50px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
