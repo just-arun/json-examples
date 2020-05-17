@@ -47,10 +47,10 @@
       <aside class="navigation">
         <nav>
           <ul>
-            <li><button @click="location.hash='#about'" :class="`nave-link ${sectionOne === 'about' ? 'active' : ''}`">About</button></li>
-            <li><button :class="`nave-link ${sectionOne === 'tech' ? 'active' : ''}`">Tech</button></li>
-            <li><button :class="`nave-link ${sectionOne === 'projects' ? 'active' : ''}`">Projects</button></li>
-            <li><button :class="`nave-link ${sectionOne === 'contact' ? 'active' : ''}`">Contact</button></li>
+            <li><button @click="navLink('about')" :class="`nave-link ${sectionOne === 'about' ? 'active' : ''}`">About</button></li>
+            <li><button @click="navLink('tech')" :class="`nave-link ${sectionOne === 'tech' ? 'active' : ''}`">Tech</button></li>
+            <li><button @click="navLink('projects')" :class="`nave-link ${sectionOne === 'projects' ? 'active' : ''}`">Projects</button></li>
+            <li><button @click="navLink('contact')" :class="`nave-link ${sectionOne === 'contact' ? 'active' : ''}`">Contact</button></li>
           </ul>
         </nav>
       </aside>
@@ -72,6 +72,9 @@
             </div>
           </div>
           <div id="about"></div>
+          <div id="tech"></div>
+          <div id="projects"></div>
+          <div id="contact"></div>
         </section>
       </main>
     </div>

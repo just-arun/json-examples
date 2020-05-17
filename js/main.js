@@ -30,7 +30,7 @@ const app = new Vue({
             }
         },
         navLink(par) {
-            location.
+            location.hash = `#${par}`
         }
     }
 });
