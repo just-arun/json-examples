@@ -401,7 +401,6 @@ body {
       .right {
         background: #f8f8f8;
         width: 50%;
-        background: #000;
         overflow: hidden;
       }
 
@@ -425,27 +424,6 @@ body {
         .right {
           overflow: hidden;
           width: 0%;
-        }
-      }
-      &.tech {
-          overflow: hidden;
-        .left {
-          width: 0% !important;
-          @include sm() {
-            .left-content {
-              left: 10%;
-            }
-          }
-          .hello {
-            opacity: 0;
-            @include sm() {
-              top: 20%;
-            }
-          }
-        }
-        .right {
-          overflow: hidden;
-          animation: animateWidthFull 1s 1 forwards ease-in-out;
         }
       }
     }
@@ -484,16 +462,5 @@ body {
   } to {
     top: 0px;
     opacity: 1;
-  }
-}
-
-
-@keyframes animateWidthZero {
-  from {
-    opacity: 0;
-    width: 0%;
-  } to {
-    opacity: 1;
-    width: 50%;
   }
 }
