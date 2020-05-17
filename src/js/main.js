@@ -5,12 +5,6 @@ const app = new Vue({
         windowHeight: 0,
         openNav: false
     },
-    computed: {
-
-        hashValue() {
-            return location.hash
-        }
-    },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
         window.addEventListener("hashchange", this.handleSectionChange, false);
