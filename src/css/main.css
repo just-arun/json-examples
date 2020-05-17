@@ -160,9 +160,14 @@ body {
   width: 100%;
   min-height: 100vh;
   background: #fff;
-  padding: 40px;
   padding-bottom: 0px;
   position: relative;
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper {
+    padding: 40px;
+  }
 }
 
 .wrapper header {
@@ -173,6 +178,12 @@ body {
   background: #fff;
   z-index: 1;
   height: 40px;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper header {
+    display: none;
+  }
 }
 
 .wrapper header .name {
@@ -203,6 +214,12 @@ body {
   background: #fff;
 }
 
+@media screen and (max-width: 650px) {
+  .wrapper aside.social-media {
+    display: none;
+  }
+}
+
 .wrapper aside.social-media .media-content li {
   margin: 10px;
 }
@@ -219,8 +236,10 @@ body {
   transition: .2s !important;
 }
 
-.wrapper aside.menu-aside:hover {
-  width: 80px;
+@media screen and (max-width: 650px) {
+  .wrapper aside.menu-aside {
+    display: none;
+  }
 }
 
 .wrapper aside.menu-aside .menu-wrapper {
@@ -288,8 +307,19 @@ body {
 
 .wrapper section.landing {
   height: 200vh;
-  width: calc(100% - 80px);
   position: relative;
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper section.landing {
+    width: calc(100% - 80px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper section.landing {
+    width: 100%;
+  }
 }
 
 .wrapper section.landing .section-1 {
@@ -301,6 +331,18 @@ body {
   position: sticky;
   height: 100vh;
   width: 100%;
+}
+
+@media screen and (min-width: 650px) {
+  .wrapper section.landing .section-1 {
+    top: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper section.landing .section-1 {
+    overflow-x: hidden;
+  }
 }
 
 .wrapper section.landing .section-1 .left {
@@ -363,6 +405,13 @@ body {
   opacity: 1;
 }
 
+@media screen and (max-width: 650px) {
+  .wrapper section.landing .section-1 .left .hello {
+    font-size: 6rem;
+    left: calc(100% - 5rem);
+  }
+}
+
 .wrapper section.landing .section-1 .right {
   background: #f8f8f8;
   width: 50%;
@@ -376,6 +425,18 @@ body {
 .wrapper section.landing .section-1.scrolled .left {
   -webkit-animation: animateWidthFull 1s 1 forwards ease-in-out;
           animation: animateWidthFull 1s 1 forwards ease-in-out;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper section.landing .section-1.scrolled .left .left-content {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper section.landing .section-1.scrolled .left .hello {
+    top: 20%;
+  }
 }
 
 .wrapper section.landing .section-1.scrolled .right {
