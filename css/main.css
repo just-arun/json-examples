@@ -2,6 +2,78 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+.tech-section-active, .wrapper section.landing .section-1.tech .tech-section, .wrapper section.landing .section-1.projects .tech-section {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0%;
+  opacity: 1;
+  width: 100%;
+}
+
+.tech-section-active .tech-content, .wrapper section.landing .section-1.tech .tech-section .tech-content, .wrapper section.landing .section-1.projects .tech-section .tech-content {
+  -webkit-animation: fadeInTop 1s 1s 1 forwards ease-in-out;
+          animation: fadeInTop 1s 1s 1 forwards ease-in-out;
+  padding: 30px;
+}
+
+@media screen and (min-width: 650px) {
+  .tech-section-active .tech-content, .wrapper section.landing .section-1.tech .tech-section .tech-content, .wrapper section.landing .section-1.projects .tech-section .tech-content {
+    padding: 80px;
+    max-width: 600px;
+  }
+}
+
+.tech-section-active .tech-content h2, .wrapper section.landing .section-1.tech .tech-section .tech-content h2, .wrapper section.landing .section-1.projects .tech-section .tech-content h2 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #ff5851;
+  position: relative;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  line-height: 2.6rem;
+}
+
+.tech-section-active .tech-content h2::before, .wrapper section.landing .section-1.tech .tech-section .tech-content h2::before, .wrapper section.landing .section-1.projects .tech-section .tech-content h2::before {
+  position: absolute;
+  content: '';
+  top: -20px;
+  left: 0px;
+  padding: 10px;
+  background: #ff5851;
+  width: 50%;
+}
+
+.tech-section-active .tech-content h3, .wrapper section.landing .section-1.tech .tech-section .tech-content h3, .wrapper section.landing .section-1.projects .tech-section .tech-content h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.tech-section-active .tech-content p, .wrapper section.landing .section-1.tech .tech-section .tech-content p, .wrapper section.landing .section-1.projects .tech-section .tech-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.tech-section-active .tech-content p a, .wrapper section.landing .section-1.tech .tech-section .tech-content p a, .wrapper section.landing .section-1.projects .tech-section .tech-content p a {
+  color: grey;
+  text-decoration: none;
+}
+
+.tech-section-active .tech-content p a:hover, .wrapper section.landing .section-1.tech .tech-section .tech-content p a:hover, .wrapper section.landing .section-1.projects .tech-section .tech-content p a:hover {
+  color: #ff5851;
+}
+
 html,
 body,
 div,
@@ -494,6 +566,7 @@ body {
   width: 0%;
   overflow: hidden;
   background: #fff;
+  height: 100vh;
 }
 
 .wrapper section.landing .section-1.hi .left {
@@ -570,11 +643,6 @@ body {
           animation: fiftyToZero 1s 1 forwards ease-in-out;
 }
 
-.wrapper section.landing .section-1.projects .tech-section {
-  background: #fff;
-  width: 0%;
-}
-
 .wrapper section.landing .section-1.projects .projects-section {
   position: relative;
   top: 40px;
@@ -587,7 +655,8 @@ body {
 
 @media screen and (min-width: 650px) {
   .wrapper section.landing .section-1.projects .projects-section {
-    width: calc(100% - 80px);
+    -webkit-animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
+            animation: zeroToHundred 1s 1s 1 forwards ease-in-out;
   }
 }
 
@@ -611,18 +680,12 @@ body {
   position: relative;
   display: -ms-grid;
   display: grid;
-  max-width: 80%;
+  max-width: 100%;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-@media screen and (min-width: 650px) {
-  .wrapper section.landing .section-1.projects .projects-section .projects-section-content .projects-grid {
-    grid-gap: 20px;
-  }
 }
 
 .wrapper section.landing .section-1.projects .projects-section .projects-section-content .projects-grid .projects-grid-child {
