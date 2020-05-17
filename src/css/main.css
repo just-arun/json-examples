@@ -359,7 +359,7 @@ body {
 }
 
 .wrapper section.landing {
-  height: 200vh;
+  height: calc(100vh + 400);
   position: relative;
 }
 
