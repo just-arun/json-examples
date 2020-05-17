@@ -305,6 +305,16 @@ body {
   width: 16px;
 }
 
+.wrapper aside.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  z-index: 3;
+}
+
 .wrapper section.landing {
   height: 200vh;
   position: relative;
@@ -336,8 +346,8 @@ body {
 .wrapper section.landing .section-1 .left {
   background: #ff5851;
   width: 50%;
-  -webkit-animation: animateWidthHalf 1s 1 forwards cubic-bezier(0.74, -1.01, 1, 1.01);
-          animation: animateWidthHalf 1s 1 forwards cubic-bezier(0.74, -1.01, 1, 1.01);
+  -webkit-animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
+          animation: animateWidthHalf 1.6s 1 forwards ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
