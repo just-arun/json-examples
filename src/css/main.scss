@@ -166,6 +166,12 @@ body {
   }
   padding-bottom: 0px;
   position: relative;
+  #about,
+  #tech,
+  #projects,
+  #contact {
+    min-height: 100vh;
+  }
   header {
     position: fixed;
     top: 0px;
@@ -332,7 +338,7 @@ body {
     }
   }
   section.landing {
-    height: calc(100vh + 800px);
+    height: 500vh;
     @include lg() {
       width: 100%;
     }
