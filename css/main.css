@@ -242,6 +242,13 @@ body {
   }
 }
 
+.wrapper #about,
+.wrapper #tech,
+.wrapper #projects,
+.wrapper #contact {
+  min-height: 100vh;
+}
+
 .wrapper header {
   position: fixed;
   top: 0px;
@@ -449,7 +456,7 @@ body {
 }
 
 .wrapper section.landing {
-  height: calc(100vh + 800px);
+  height: 500vh;
   position: relative;
 }
 

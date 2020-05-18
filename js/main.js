@@ -18,16 +18,19 @@ const app = new Vue({
     },
     methods: {
         handleScroll(e) {
-            if (window.pageYOffset > 50 && window.pageYOffset < 200) {
+            let tech = this.windowHeight + 50
+            let project = this.windowHeight * 2
+            let contact = this.windowHeight * 3
+            if (window.pageYOffset > 50 && window.pageYOffset < this.windowHeight) {
                 location.hash = "#about"
             }
-            if (window.pageYOffset > 250 && window.pageYOffset < 400) {
+            if (window.pageYOffset > tech  && window.pageYOffset < project) {
                 location.hash = "#tech"
             }
-            if (window.pageYOffset > 450 && window.pageYOffset < 600) {
+            if (window.pageYOffset > (project + 50) && window.pageYOffset < contact) {
                 location.hash = "#projects"
             }
-            if (window.pageYOffset > 650 && window.pageYOffset < 800) {
+            if (window.pageYOffset > (contact + 50) && window.pageYOffset < (contact + this.windowHeight + 1000)) {
                 location.hash = "#contact"
             }
             if (window.pageYOffset < 45) {
